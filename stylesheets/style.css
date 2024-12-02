@@ -381,6 +381,8 @@ a.header-link-dropdown {
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
+    background: url('../assets/Group\ 4114.png') center no-repeat ;
+    background-size: 43rem;
 }
 
 .important-links-overlay.active{
@@ -416,31 +418,59 @@ a.header-link-dropdown {
 .important-links-overlay-circle::after {
     transform: rotate(-45deg); /* Second line - top left to bottom right */
 }
-.important-links-item{
+.important-links-item {
     position: absolute;
-    top: 10%;
+    top: 8%;
     right: 50%;
-    height: 2rem;
-    width: 2rem;
+    height: 4rem;
+    width: 6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
+   
+}
+.important-links-item:nth-child(1){
+    transform: translateX(50%);
+}
+.important-links-item:nth-child(2){
+    top: 50%;
+    right: 14%;
+    transform: translate(50%, -50%);
 }
 
-.important-links-icon {
+.important-links-item:nth-child(3){
+    top: auto;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
 
+.important-links-item:nth-child(4){
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    left: 14%;
+    transform: translate(-50%, -50%);
+}
+.important-links-icon {
     width: 100%;
     height: 100%;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
 }
 
 .important-links-icon img {
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
 .important-links-text{
     color: white;
+    margin-top: .2rem;
+    color: #D5D8DA;
 }
 .important-links-x{
     display: flex;
@@ -658,6 +688,7 @@ a.header-link-dropdown {
 .generator-image-container {
     width: 32rem;
     position: relative;
+    z-index: 5;
 }
 
 .generator-image-container .logo-image {
@@ -679,6 +710,25 @@ a.header-link-dropdown {
     border-radius: 1rem;
 }
 
+.generator-background-image {
+    width: 30rem;
+    height: 25rem;
+    position: absolute;
+    left: 4rem;
+    background-color: #F5F6F8;
+    top: 2rem;
+    z-index: 0;
+    border-radius: 1rem;
+    
+}
+
+
+.generator-background-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .plumbing-image-container {
     position: absolute;
     bottom: -5%;
@@ -686,6 +736,7 @@ a.header-link-dropdown {
     width: 23rem;
     border: 1rem solid white;
     border-radius: 1rem;
+    z-index: 6;
 }
 
 .plumbing-image-container img {
