@@ -745,7 +745,7 @@ a.header-link-dropdown {
 
 .generator-overlay {
     width: 100%;
-    height: 100%;
+    height: 70%;
     background: linear-gradient(to bottom left, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0) 50%);
     position: absolute;
     border-radius: 1rem;
@@ -1131,9 +1131,11 @@ transform: translate(0.1rem, -0.1rem);
     justify-content: center;
     flex-wrap: wrap ;
     overflow: hidden;
+    flex-direction: column;
 }
 .twitter-feed-container{
     transform: translateX(-200%);
+    display: none;
 }
 
 .twitter-feed-container .twitter-timeline {
@@ -1172,19 +1174,19 @@ transform: translate(0.1rem, -0.1rem);
 }
 
 .events-card.active {
-    width: 60%;
+    width: 100%;
 }
 
 .events-card:not(.active) {
-    width: calc(20% - 1rem);
+    width: 100%
 }
 
-.events-card:not(.active) .events-card-title,
+/* .events-card:not(.active) .events-card-title,
 .events-card:not(.active) .events-time,
 .events-card:not(.active) .events-button {
     display: none;
 
-}
+} */
 
 .events-card:not(.active) .events-date-container {
     left: 50%;
@@ -1197,10 +1199,12 @@ transform: translate(0.1rem, -0.1rem);
 }
 
 .events-card:not(.active) .events-card-content {
-    padding: 0;
+    padding:2rem;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: start;
+    flex-direction: column;
+    
 
 }
 
@@ -1365,6 +1369,7 @@ transform: translate(0.1rem, -0.1rem);
     font-size: 1.7rem;
     margin-top: 1rem;
     padding-bottom: 2rem;
+    white-space: pre-wrap;
 }
 
 .events-card-type {
@@ -1726,15 +1731,37 @@ transform: translate(0.1rem, -0.1rem);
     .events-section{
         justify-content: normal;
         flex-wrap: nowrap;
+        flex-direction: row;
     }
-    .about-us-container{
-        padding-left: 12rem;
-    padding-right: 6.5rem;
+    .twitter-feed-container{
+        display: flex;
     }
     .events-cards-container {
       
         flex-direction: row;
     }
+    .events-card:not(.active){
+        width: calc(20% - 1rem);
+    }
+    .events-card:not(.active) .events-card-title,
+    .events-card:not(.active) .events-time,
+    .events-card:not(.active) .events-button {
+        display: none;
+
+        
+    }
+    .events-card.active{
+        width: 60%;
+    }
+    .events-card:not(.active) .events-card-content{
+        padding: 0;
+    }
+    .about-us-container{
+        padding-left: 12rem;
+    padding-right: 6.5rem;
+    }
+    
+  
     .main-title{
         font-size: 3rem;
     }
