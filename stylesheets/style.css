@@ -373,13 +373,14 @@ a.header-link-dropdown {
     top: 0;
     height: 100%;
     z-index: 120;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255,255,255, .0);
     transition: var(--animation);
     pointer-events: none;
     opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(10px);
 }
 
 .important-links-overlay.active{
@@ -387,7 +388,60 @@ a.header-link-dropdown {
     opacity: 1;
 }
 
+.important-links-overlay-circle {
+    height: 30rem;
+    /* z-index: 9999; */
+    position: relative;
+    width: 30rem;
+    border-radius: 50%;
+    background: rgb(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    mask: radial-gradient(transparent 110px, #000 105px);
+}
+.important-links-overlay-circle::before,
+.important-links-overlay-circle::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Line thickness */
+    background: linear-gradient(to right,rgb(128, 128, 128, 0.1) 0%, white 45%, rgb(128, 128, 128, 0.1) 100%);; /* Line color */
+    top: 50%; /* Center vertically */
+    left: 0;
+}
 
+.important-links-overlay-circle::before {
+    transform: rotate(45deg); /* First line - bottom left to top right */
+}
+
+.important-links-overlay-circle::after {
+    transform: rotate(-45deg); /* Second line - top left to bottom right */
+}
+.important-links-item{
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.important-links-icon {
+
+    width: 100%;
+    height: 100%;
+}
+
+.important-links-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+.important-links-text{
+    color: white;
+}
 .important-links-x{
     display: flex;
     width: 3.5rem;
@@ -447,11 +501,14 @@ a.header-link-dropdown {
 
 .important-links-button::after{
     position: absolute;
-    width: 130%;
-    height: 130%;
+    width: 140%;
+    height: 140%;
     border: 1px solid #835787;
     border-radius: 50%;
     content: '';
+}
+.important-links-container.active .important-links-button::after{
+    border: 1px solid white;
 }
 
 .important-links-button img{
