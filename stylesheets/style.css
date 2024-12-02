@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: 'avenirheavy';
-    src: url('../fonts/avenir-next-heavy.ttf') format('truetype');
+    src: url('../fonts/avenir-next-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -38,6 +38,10 @@
 body {
     font-family: avenir;
     margin: 0;
+}
+
+body.active{
+    overflow: hidden;
 }
 
 a {
@@ -172,7 +176,7 @@ img.landing-pattern-light {
 
 
 .header-links-container {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -276,6 +280,7 @@ a.header-link-dropdown {
 }
 
 .swiper-img {
+    object-fit: cover;
     left: 0;
     z-index: -3;
     position: absolute;
@@ -379,7 +384,7 @@ a.header-link-dropdown {
     top: 0;
     height: 100%;
     z-index: 120;
-    background-color: rgba(255,255,255, .0);
+    background-color: rgba(255,255,255, 1);
     transition: var(--animation);
     pointer-events: none;
     opacity: 0;
@@ -388,7 +393,8 @@ a.header-link-dropdown {
     align-items: center;
     backdrop-filter: blur(10px);
     background: url('../assets/Group\ 4114.png') center no-repeat ;
-    background-size: 43rem;
+    background-size: 20rem;
+
 }
 
 .important-links-overlay.active{
@@ -398,6 +404,7 @@ a.header-link-dropdown {
 
 .important-links-overlay-circle {
     height: 30rem;
+    opacity: 0;
     /* z-index: 9999; */
     position: relative;
     width: 30rem;
@@ -409,6 +416,7 @@ a.header-link-dropdown {
 .important-links-overlay-circle::before,
 .important-links-overlay-circle::after {
     content: '';
+    display: block;
     position: absolute;
     width: 100%;
     height: 2px; /* Line thickness */
@@ -418,12 +426,12 @@ a.header-link-dropdown {
 }
 
 .important-links-overlay-circle::before {
-    transform: rotate(45deg); /* First line - bottom left to top right */
-}
+    transform:  rotate(45deg)}
 
 .important-links-overlay-circle::after {
-    transform: rotate(-45deg); /* Second line - top left to bottom right */
-}
+    transform: rotate(-45deg)}
+
+    
 .important-links-item {
     position: absolute;
     top: 8%;
@@ -434,22 +442,43 @@ a.header-link-dropdown {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
    
 }
-.important-links-item:nth-child(1){
-    transform: translateX(50%);
+
+.important-links-item::before {
+    content: '';
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+   
+   transition: opacity 0.3s ease, transform 0.3s ease; 
+    filter: blur(20px); /* Additional blur for the spark effect */
+    opacity: 0.0; /* Adjust opacity for a softer effect */
+    z-index: -1; /* Place behind the main element */
+}
+.important-links-item:hover::before {
+    opacity: 0.4;
+    transform: scale(1); 
+}
+.important-links-item:nth-child(1) {
+    transform: translate(50%, 200%);
 }
 .important-links-item:nth-child(2){
     top: 50%;
     right: 14%;
-    transform: translate(50%, -50%);
+    transform: translate(-150%, -50%);
 }
 
 .important-links-item:nth-child(3){
     top: auto;
     bottom: 0%;
     right: 50%;
-    transform: translate(50%, -50%);
+    transform: translate(50%, -250%);
 }
 
 .important-links-item:nth-child(4){
@@ -457,7 +486,7 @@ a.header-link-dropdown {
     bottom: auto;
     right: auto;
     left: 14%;
-    transform: translate(-50%, -50%);
+    transform: translate(150%, -50%);
 }
 .important-links-icon {
     width: 100%;
@@ -694,6 +723,7 @@ a.header-link-dropdown {
     position: relative;
     height: 35rem;
     transform: translateX(-300%);
+    display: none;
 }
 
 .generator-image-container {
@@ -1544,10 +1574,19 @@ transform: translate(0.1rem, -0.1rem);
     border-top: 1rem solid var(--violet-color);
     background: url('../assets/Mask\ Group\ 10.png') #282828 no-repeat center;
 }
+.footer-overflow-container {
+    width: 100%;
+}
+.footer-item-container ul {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(145, 145, 145, 0.438);
+    width: 100%;
+}
 
 .footer-items-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 
 }
 
@@ -1564,6 +1603,7 @@ transform: translate(0.1rem, -0.1rem);
 .footer-social-media-container {
     display: flex;
     gap: .8rem;
+
 }
 
 .social-media-icon {
@@ -1589,11 +1629,16 @@ transform: translate(0.1rem, -0.1rem);
 .social-media-icon.fb img {
     width: 30%;
 }
-
+.footer-social-links-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 5;
+    
+}
 .footer-links-container {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
     transform: translateX(200%);
     opacity: 0;
 }
@@ -1603,6 +1648,7 @@ transform: translate(0.1rem, -0.1rem);
     flex-direction: column;
     gap: 1rem;
     color: white;
+    padding: 1rem;
 }
 
 .footer-link {
@@ -1613,6 +1659,8 @@ transform: translate(0.1rem, -0.1rem);
 
 
 .footer-link-container-title {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid white;
     font-family: avenirmedium;
     color: white;
     text-transform: uppercase;
@@ -1621,16 +1669,7 @@ transform: translate(0.1rem, -0.1rem);
     position: relative;
 }
 
-.footer-link-container-title::before {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    background-color: var(--violet-color);
-    display: block;
-    height: 100%;
-    width: .15rem;
-}
+
 
 .footer-lower-container {
     margin-top: 7rem;
@@ -1676,6 +1715,9 @@ transform: translate(0.1rem, -0.1rem);
 }
 
 @media (min-width: 1200px) {
+    .header-links-container{
+        display: flex;
+    }
     .services-cards-container{
         padding-left: 12rem;
         padding-right: 12rem;
@@ -1726,6 +1768,41 @@ transform: translate(0.1rem, -0.1rem);
         width: 30%;
         height: 27rem;
     }
+
+    .about-us-images{
+        display: flex;
+    }
+
+    .footer-items-container{
+        flex-direction: row;
+    }
+    .footer-links{
+        padding: 0;
+    }
+    .footer-links-container{
+        gap: 1.2rem;
+    }
+
+    .footer-link-container-title{
+        padding: 0;
+        padding-left: 1rem;
+        border-bottom: none;
+    }
     
+    .footer-link-container-title::before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        background-color: var(--violet-color);
+        display: block;
+        height: 100%;
+        width: .15rem;
+    }
+
+    .footer-social-links-container{
+        justify-content: start;
+        order: 0;
+    }
 
 }

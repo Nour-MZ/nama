@@ -1,5 +1,7 @@
-shadow on who are we section images
 
-overflow issues started before latest news. fix
+avenir heavy font is very heavy: 20 years-of-experience, and events card date
 
-electricitt-wastewater-water cards are not even widths 
+
+media center update backround for date
+
+important links add background image
