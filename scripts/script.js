@@ -14,13 +14,13 @@
 
     const linktl = gsap.timeline({ paused: true });
 
-    linktl.to('.important-links-button', { duration: 1, delay: 1.5, rotation: 360, ease: "power1.inOut" })
-    .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "power1.inOut" }, "<0.2")
-    .to('.important-links-overlay', { duration: 0.5, backgroundSize: '43rem', ease: "power1.inOut",  }, "<")
-    .to('.important-links-item:nth-child(1)', {y:"0%", x:"50%", duration: 0.5, ease: "power1.inOut",  }, "<0.2")
-    .to('.important-links-item:nth-child(2)', {y:"-0%", x:"50%", duration: 0.5, ease: "power1.inOut",  }, "<0.2")
-    .to('.important-links-item:nth-child(3)', {y:"-50%", x:"50%", duration: 0.5, ease: "power1.inOut",  }, "<0.2")
-    .to('.important-links-item:nth-child(4)', {y:"-0%", x:"-50%", duration: 0.5, ease: "power1.inOut",  }, "<0.2")
+    linktl.to('.important-links-button', { duration: 1, delay: 1.5, rotation: 360,ease: "none"})
+    .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "none" }, "<0.2")
+    .to('.important-links-overlay', { duration: 0.5, backgroundSize: '43rem', ease: "power3.in" }, "<")
+    .to('.important-links-item:nth-child(1)', {y:"0%", x:"50%", duration: 0.5, ease: "none"}, "<0.2")
+    .to('.important-links-item:nth-child(2)', {y:"-0%", x:"50%", duration: 0.5, ease: "none" }, "<0.2")
+    .to('.important-links-item:nth-child(3)', {y:"-50%", x:"50%", duration: 0.5, ease: "none" }, "<0.2")
+    .to('.important-links-item:nth-child(4)', {y:"-0%", x:"-50%", duration: 0.5, ease: "none" }, "<0.2")
  
 
 
@@ -122,7 +122,15 @@
 
 
   $('.important-links-x').click(function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  
+    $('.important-links-container').removeClass("active");
+    $('.important-links-overlay').removeClass("active")
+    $("body").removeClass("active")
+
+  });
+
+  $('.important-links-overlay').click(function () {
+ 
     $('.important-links-container').removeClass("active");
     $('.important-links-overlay').removeClass("active")
     $("body").removeClass("active")
