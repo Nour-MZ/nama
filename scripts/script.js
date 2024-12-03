@@ -14,9 +14,9 @@
 
     const linktl = gsap.timeline({ paused: true });
 
-    linktl.to('.important-links-button', { duration: 1, delay: 1.5, rotation: 360,ease: "none"})
-    .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "none" }, "<0.2")
+    linktl.to('.important-links-button', { duration: 0.7, delay: 1.5, rotation: 180,ease: "none"})
     .to('.important-links-overlay', { duration: 0.5, backgroundSize: '43rem', ease: "power3.in" }, "<")
+    .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "none" }, ">0.2")
     .to('.important-links-item:nth-child(1)', {y:"0%", x:"50%", duration: 0.5, ease: "none"}, "<0.2")
     .to('.important-links-item:nth-child(2)', {y:"-0%", x:"50%", duration: 0.5, ease: "none" }, "<0.2")
     .to('.important-links-item:nth-child(3)', {y:"-50%", x:"50%", duration: 0.5, ease: "none" }, "<0.2")
