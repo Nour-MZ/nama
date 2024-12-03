@@ -17,10 +17,10 @@
     linktl.to('.important-links-button', { duration: 0.7, delay: 1.5, rotation: 180,ease: "none"})
     .to('.important-links-overlay', { duration: 0.5, backgroundSize: '43rem', ease: "power3.in" }, "<")
     .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "none" }, ">0.2")
-    .to('.important-links-item:nth-child(1)', {y:"0%", x:"50%", duration: 0.5, ease: "none"}, "<0.2")
-    .to('.important-links-item:nth-child(2)', {y:"-0%", x:"50%", duration: 0.5, ease: "none" }, "<0.2")
-    .to('.important-links-item:nth-child(3)', {y:"-50%", x:"50%", duration: 0.5, ease: "none" }, "<0.2")
-    .to('.important-links-item:nth-child(4)', {y:"-0%", x:"-50%", duration: 0.5, ease: "none" }, "<0.2")
+    .to('.important-links-item:nth-child(1)', {y:"0%", x:"50%", duration: 0.5, opacity:1, ease: "none"}, "<0.2")
+    .to('.important-links-item:nth-child(2)', {y:"-0%", x:"50%", duration: 0.5,  opacity:1,ease: "none" }, "<0.2")
+    .to('.important-links-item:nth-child(3)', {y:"-50%", x:"50%", duration: 0.5,  opacity:1,ease: "none" }, "<0.2")
+    .to('.important-links-item:nth-child(4)', {y:"-0%", x:"-50%", duration: 0.5,  opacity:1,ease: "none" }, "<0.2")
  
 
 
@@ -108,6 +108,14 @@
     });
 
   //Landing Page section
+  $('.hamburger-container').click(function () {
+    
+  
+        $("body").toggleClass('active')
+        $('.header-links-container').toggleClass("active");
+        $('.main-header').addClass("active")
+    
+    })
 
   $('.important-links-container').click(function () {
     // Check if the clicked element doesn't have the 'active' class
