@@ -83,6 +83,19 @@ p {
     margin: 0;
 }
 
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: white;
+}
+
+
 a:hover,
 a:active,
 a:focus {
@@ -150,18 +163,22 @@ img.landing-pattern-light {
 }
 
 .main-header {
-    display: flex;
+
+
+    display: flex
+;
     justify-content: space-between;
     z-index: 99;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 0;
+    width: 100%;
     padding-bottom: 2rem;
     padding-top: 2rem;
     transform: translateY(-100%);
     color: white;
     border-bottom: 1px solid var(--border-color);
 }
-
 .main-header-left-container {
     display: flex;
     align-items: center;
@@ -294,6 +311,12 @@ a.header-link-dropdown {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
     opacity: 0;
+    cursor: pointer;
+    transition: var(--animation);
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-vertical:hover {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .swiper .swiper-pagination-bullet:first-child {
@@ -350,6 +373,12 @@ a.header-link-dropdown {
     cursor: pointer;
     align-items: center;
     justify-content: space-between;
+    transition: var(--animation);
+    
+}
+
+.landing-button:hover {
+    background: rgb(92 53 95);
 }
 
 .landing-button:hover img {
@@ -580,6 +609,14 @@ a.header-link-dropdown {
     background: linear-gradient(to top, #223C5A, #325172);
 }
 
+.important-links-button:hover img {
+    transform: scale(1.05);
+}
+
+.important-links-container .important-links-button:hover img {
+    transform: scale(1.1);
+}
+
 .important-links-button::after {
     position: absolute;
     width: 140%;
@@ -595,6 +632,7 @@ a.header-link-dropdown {
 
 .important-links-button img {
     width: 45%;
+    transition: var(--animation);
 }
 
 /* Card Section*/
@@ -940,8 +978,11 @@ a.header-link-dropdown {
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+    transition: var(--animation);
 }
-
+.about-us-button:hover {
+    background: rgb(92 53 95);
+}
 .about-us-button:hover img {
     transform: translate(.1rem, -.1rem);
 
@@ -1016,6 +1057,7 @@ a.header-link-dropdown {
     border-bottom: 1px solid var(--violet-color);
     padding-bottom: .3rem;
     transform: translateX(200%);
+    flex-shrink: 0;
 }
 
 .view-all-news:hover img {
@@ -1140,8 +1182,7 @@ a.header-link-dropdown {
 }
 
 .lnews-card-content .read-more-btn:hover {
-    background-color: rgb(115, 66, 120, 0.05);
-}
+    background-color: rgb(207 107 182 / 15%);}
 
 /* Events Section */
 
@@ -1159,6 +1200,7 @@ a.header-link-dropdown {
 .twitter-feed-container {
     transform: translateX(-200%);
     display: none;
+    width: 33%;
 }
 
 .twitter-feed-container .twitter-timeline {

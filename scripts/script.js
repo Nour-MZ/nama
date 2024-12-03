@@ -118,6 +118,12 @@
         $('.important-links-overlay').addClass("active");
         linktl.restart();
     }
+    else{
+      $("body").removeClass('active')
+        // window.scrollTo({ top: 0, behavior: 'smooth' });
+        $(this).removeClass("active");
+        $('.important-links-overlay').removeClass("active");
+    }
 });
 
 
