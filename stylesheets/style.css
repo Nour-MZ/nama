@@ -1327,7 +1327,7 @@ a.header-link-dropdown {
 .events-card-background {
     height: auto;
     width: 100%;
-    bottom: 17rem;
+    bottom: 8rem;
     position: relative;
 }
 
@@ -1389,10 +1389,10 @@ a.header-link-dropdown {
 
 .events-card-title {
     font-family: avenirdemi;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     margin-top: 1rem;
     padding-bottom: 2rem;
-    white-space: nowrap;
+    white-space: pre-wrap;
 }
 
 .events-card-type {
@@ -1785,7 +1785,9 @@ a.header-link-dropdown {
 
         flex-direction: row;
     }
-
+    .events-card-background {
+        bottom: 17rem;
+    }
     .events-card:not(.active) {
         width: calc(20% - 1rem);
     }
@@ -1796,6 +1798,11 @@ a.header-link-dropdown {
         display: none;
 
 
+    }
+
+    .events-card-title{
+        white-space: nowrap;
+        font-size: 1.7rem;
     }
 
     .events-card.active {
