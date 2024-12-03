@@ -1,7 +1,4 @@
-
-avenir heavy font is very heavy: 20 years-of-experience, and events card date
-
-
 media center update backround for date
 
-important links add background image
+important links button add background image
+

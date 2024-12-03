@@ -620,14 +620,14 @@ a.header-link-dropdown {
     margin-top: -15rem;
     margin-bottom: 8rem;
     z-index: 10;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     flex-wrap: wrap;
 }
 
 .services-card {
     transform: translateY(50%);
-    padding: 2.5rem;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -891,7 +891,7 @@ a.header-link-dropdown {
 .about-us-title {
     margin-top: 1rem;
     line-height: 2.8rem;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-family: avenirdemi;
     margin-bottom: 1rem;
 }
@@ -1450,7 +1450,7 @@ a.header-link-dropdown {
 .media-card {
     cursor: pointer;
     width: 100%;
-    height: 22rem;
+    height: 18rem;
     transform: translateY(80%);
 }
 
@@ -1706,7 +1706,7 @@ a.header-link-dropdown {
 
 .footer-link-container-title {
     padding: 1rem 2rem;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #ffffff78;
     font-family: avenirmedium;
     color: white;
     text-transform: uppercase;
@@ -1853,13 +1853,16 @@ a.header-link-dropdown {
         padding-right: 6.5rem;
     }
 
-
+    .about-us-title{
+        font-size: 2.3rem;
+    }
     .main-title {
         font-size: 3rem;
     }
 
     .services-card {
         width: 33%;
+        padding: 2.5rem;
     }
 
     .econtainer {
