@@ -17,11 +17,14 @@ $(document).ready(function () {
   linktl.to('.important-links-button', { duration: 0.6, delay: 1, rotation: 180, ease: "none" })
     .to('.important-links-overlay', { duration: 0.4, backgroundSize: '43rem', ease: "power3.in" }, "<")
     .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "none" }, ">0.2")
-    .to('.important-links-item:nth-child(1)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "none" }, "<0.2")
-    .to('.important-links-item:nth-child(2)', { y: "-0%", x: "50%", duration: 0.4, opacity: 1, ease: "none" }, "<0.2")
-    .to('.important-links-item:nth-child(3)', { y: "-50%", x: "50%", duration: 0.4, opacity: 1, ease: "none" }, "<0.2")
-    .to('.important-links-item:nth-child(4)', { y: "-0%", x: "-50%", duration: 0.4, opacity: 1, ease: "none" }, "<0.2")
-
+    .add(() => {
+      document.querySelector('.important-links-border').classList.remove('transition');
+    }, "<")
+    .to('.important-links-item:nth-child(1)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    .to('.important-links-item:nth-child(2)', { y: "-0%", x: "45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    .to('.important-links-item:nth-child(3)', { y: "-50%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    .to('.important-links-item:nth-child(4)', { y: "-0%", x: "-45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    
 
 
 
@@ -160,6 +163,7 @@ $(document).ready(function () {
   $('.important-links-container').click(function () {
     // Check if the clicked element doesn't have the 'active' class
     if (!$(this).hasClass("active")) {
+      $(".important-links-border").addClass('transition')
       $("body").addClass('active')
       window.scrollTo({ top: 0, behavior: 'smooth' });
       $(this).addClass("active");
@@ -168,6 +172,7 @@ $(document).ready(function () {
     }
     else {
       $("body").removeClass('active')
+      $(".important-links-border").removeClass('transition')
       // window.scrollTo({ top: 0, behavior: 'smooth' });
       $(this).removeClass("active");
       $('.important-links-overlay').removeClass("active");
@@ -183,11 +188,13 @@ $(document).ready(function () {
 
   });
 
-  $('.important-links-overlay').click(function () {
+  $('.important-links-overlay').click(function (e) {
 
-    $('.important-links-container').removeClass("active");
-    $('.important-links-overlay').removeClass("active")
-    $("body").removeClass("active")
+if (!$(e.target).closest('.important-links-overlay-circle').length) {
+        $('.important-links-container').removeClass("active");
+        $('.important-links-overlay').removeClass("active");
+        $("body").removeClass("active");
+    }
 
   });
   // Events Section
