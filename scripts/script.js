@@ -20,8 +20,18 @@ $(document).ready(function () {
     .add(() => {
       document.querySelector('.important-links-border').classList.remove('transition');
     }, "<")
-    .to('.important-links-item:nth-child(1)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
-    .to('.important-links-item:nth-child(2)', { y: "-0%", x: "45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    .fromTo('.important-links-overlay-circle-before', 
+      { scale: 0, rotation: 45, opacity: 0 }, // From values
+      { scale: 1, rotation: 45, duration: 2.5, opacity: 1, ease: "power4.out" }, // To values
+      "<0.2"
+  )
+  .fromTo('.important-links-overlay-circle-after', 
+      { scale: 0, rotation: -45, opacity: 0 }, // From values
+      { scale: 1, rotation: -45, duration: 2.5, opacity: 1, ease: "power4.out" }, // To values
+      "<"
+  )
+    .to('.important-links-item:nth-child(5)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    .to('.important-links-item:nth-child(6)', { y: "-0%", x: "45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
     .to('.important-links-item:nth-child(3)', { y: "-50%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
     .to('.important-links-item:nth-child(4)', { y: "-0%", x: "-45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
     
