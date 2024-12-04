@@ -733,7 +733,7 @@ a.header-link-dropdown {
     position: relative;
     background-color: white;
     background: url('../assets/Mask\ Group\ 6.png') white no-repeat bottom;
-
+    opacity: 0;
 }
 
 .services-card-icon-div {
@@ -837,6 +837,7 @@ a.header-link-dropdown {
     height: 35rem;
     transform: translateX(-300%);
     display: none;
+    opacity: 0;
 }
 
 .generator-image-container {
@@ -970,6 +971,7 @@ a.header-link-dropdown {
 
 .about-us-content {
     transform: translateX(300%);
+    opacity: 0;
 }
 
 .about-us-subtitle {
@@ -1091,6 +1093,7 @@ a.header-link-dropdown {
 
 .lnews-subtitle {
     transform: translateX(-150%);
+    opacity: 0;
     display: inline-block;
 }
 
@@ -1107,6 +1110,7 @@ a.header-link-dropdown {
     font-size: 2rem;
     font-family: avenirdemi;
     transform: translateX(-200%);
+    opacity: 0;
 }
 
 .view-all-news {
@@ -1116,6 +1120,7 @@ a.header-link-dropdown {
     padding-bottom: .3rem;
     transform: translateX(200%);
     flex-shrink: 0;
+    opacity: 0;
 }
 
 .view-all-news:hover img {
@@ -1157,6 +1162,7 @@ a.header-link-dropdown {
 
 .lnews-card {
     transform: translateY(50%);
+    opacity: 0;
     display: flex;
     min-width: 15rem;
     flex-direction: column;
@@ -1267,6 +1273,7 @@ a.header-link-dropdown {
     transform: translateX(-200%);
     display: none;
     width: 33%;
+    opacity: 0;
 }
 
 .twitter-feed-container .twitter-timeline {
@@ -1294,6 +1301,7 @@ a.header-link-dropdown {
     gap: 1rem;
 }
 .events-card {
+    opacity: 0;
     cursor: pointer;
     /* width: 31rem; */
     height: 28rem;
@@ -1481,6 +1489,7 @@ a.header-link-dropdown {
     align-items: center;
     width: 1rem;
     margin-right: .5rem;
+    
 }
 
 .events-clock-image-container img {
@@ -1549,6 +1558,7 @@ a.header-link-dropdown {
     position: relative;
     transform: translateX(-150%);
     display: inline-block;
+    opacity: 0;
 }
 
 .media-cards-container {
@@ -1562,6 +1572,7 @@ a.header-link-dropdown {
     width: 100%;
     height: 18rem;
     transform: translateY(80%);
+    opacity: 0;
 }
 
 /* .media-card:nth-child(1) {
@@ -1688,6 +1699,7 @@ a.header-link-dropdown {
 .media-card-data {
     padding-top: 1.5rem;
     transform: translateY(-100%);
+    opacity: 0;
 }
 
 .media-card-title {
@@ -1850,6 +1862,7 @@ a.header-link-dropdown {
     gap: .9rem;
     align-items: center;
     transform: translateX(-100%);
+
     opacity: 0;
 }
 
