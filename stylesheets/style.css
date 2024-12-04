@@ -1898,6 +1898,7 @@ a.header-link-dropdown {
 @media (min-width: 768px) {
     .lnews-cards-container{
         grid-template-columns: 1fr 1fr 1fr;
+        gap: .8rem;
     }
 
     .lnews-card-content{
@@ -2217,6 +2218,7 @@ a.header-link-dropdown {
 
     .lnews-cards-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
     .lnews-card-content{
         height: 55%;
