@@ -8,33 +8,33 @@ $(document).ready(function () {
   landingtimeline.to(".landing-pattern-container", { y: 0 });
   landingtimeline.to(".main-header", { y: "0" }, 0.3);
   landingtimeline.to(".landing-content-main", { x: "0" });
-  landingtimeline.to(".swiper-pagination", { opacity: "1", duration: 0.5 }, "<"); // Same start time
+  landingtimeline.to(".landing-swiper-pagination", { opacity: "1", duration: 0.5 }, "<"); // Same start time
   landingtimeline.to(".important-links-container", { opacity: "1", duration: 0.5 }, "<");
 
 
   const linktl = gsap.timeline({ paused: true });
 
-  linktl.to('.important-links-button', { duration: 0.6, delay: 1, rotation: 180, ease: "none" })
+  linktl.to('.important-links-button', { duration: 0.6, delay: 1, rotation: 360, ease: "none" })
     .to('.important-links-overlay', { duration: 0.4, backgroundSize: '43rem', ease: "power3.in" }, "<")
     .to('.important-links-overlay-circle', { opacity: 1, duration: 1, ease: "none" }, ">0.2")
     .add(() => {
       document.querySelector('.important-links-border').classList.remove('transition');
     }, "<")
-    .fromTo('.important-links-overlay-circle-before', 
+    .fromTo('.important-links-overlay-circle-before',
       { scale: 0, rotation: 45, opacity: 0 }, // From values
       { scale: 1, rotation: 45, duration: 2.5, opacity: 1, ease: "power4.out" }, // To values
       "<0.2"
-  )
-  .fromTo('.important-links-overlay-circle-after', 
+    )
+    .fromTo('.important-links-overlay-circle-after',
       { scale: 0, rotation: -45, opacity: 0 }, // From values
       { scale: 1, rotation: -45, duration: 2.5, opacity: 1, ease: "power4.out" }, // To values
       "<"
-  )
+    )
     .to('.important-links-item:nth-child(5)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
     .to('.important-links-item:nth-child(6)', { y: "-0%", x: "45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
     .to('.important-links-item:nth-child(3)', { y: "-50%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
     .to('.important-links-item:nth-child(4)', { y: "-0%", x: "-45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
-    
+
 
 
 
@@ -68,6 +68,18 @@ $(document).ready(function () {
 
     },
   });
+
+  gsap.set(".sitelinks-card > *", { x: '-50%', opacity: 0 });
+  ScrollTrigger.batch(".sitelinks-card > *", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+     
+      gsap.to(element, { x: 0, opacity: 1, stagger: 0.15, duration: 1 });
+
+    },
+  });
+
   ScrollTrigger.batch(".view-all-news", {
     once: true,
     start: "top 95%",
@@ -150,15 +162,49 @@ $(document).ready(function () {
     },
   });
 
-  const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
-    loop: true,
+  landingswiperelement =  document.querySelector('.landing-swiper')
+  mediaswiperelement = document.querySelector('.media-swiper')
 
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: 'true'
-    },
-  });
+
+  if (landingswiperelement) {
+    const landingswiper = new Swiper('.landing-swiper', {
+      direction: 'vertical',
+      loop: true,
+
+      pagination: {
+        el: '.landing-swiper-pagination',
+        clickable: 'true'
+      },
+    });
+  }
+
+  if (mediaswiperelement) {
+    const mediaswiper = new Swiper('.media-swiper', {
+      direction: 'horizontal',
+      slidesPerView: "auto",
+      centeredSlides: true,
+      spaceBetween: 0,
+      loop: false,
+      navigation: {
+        nextEl: '.media-swiper-button-next',
+        prevEl: '.media-swiper-button-prev',
+      },
+      pagination: {
+        el: '.media-swiper-pagination',
+        type: 'fraction', // Use bullets for pagination
+        clickable: true,
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' +
+            ' of ' +
+            '<span class="' + totalClass + '"></span>';
+        }
+      },
+    });
+    if (mediaswiper) {
+      mediaswiper.slideToLoop(0, 0);
+    }
+
+  }
 
   //Landing Page section
   $('.hamburger-container').click(function () {
@@ -200,10 +246,10 @@ $(document).ready(function () {
 
   $('.important-links-overlay').click(function (e) {
 
-if (!$(e.target).closest('.important-links-overlay-circle').length) {
-        $('.important-links-container').removeClass("active");
-        $('.important-links-overlay').removeClass("active");
-        $("body").removeClass("active");
+    if (!$(e.target).closest('.important-links-overlay-circle').length) {
+      $('.important-links-container').removeClass("active");
+      $('.important-links-overlay').removeClass("active");
+      $("body").removeClass("active");
     }
 
   });
@@ -227,7 +273,15 @@ if (!$(e.target).closest('.important-links-overlay-circle').length) {
       $(".footer-header").attr("data-bs-toggle", "collapse");
     }
   }
+  $('.media-card').click(function () {
+    $('.media-center-modal').addClass("active")
 
+  });
+
+  $('.media-modal-close-button').click(function () {
+    $('.media-center-modal').removeClass("active")
+
+  });
   // Initial check
   handleFooterToggle();
 
