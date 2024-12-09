@@ -1472,13 +1472,14 @@ position: absolute ;
 
 .twitter-feed-container {
     transform: translateX(-200%);
-    display: none;
-    width: 33%;
+    /* display: none; */
+    width: 100%;
     opacity: 0;
+    height: 33rem;
 }
 
 .twitter-feed-container .twitter-timeline {
-    width: 26rem;
+    width: 100%;
 
     overflow: hidden;
 }
@@ -1493,6 +1494,8 @@ position: absolute ;
 .upcoming-events-title {
     font-size: 2rem;
     font-family: avenirdemi;
+    
+    margin: 0 auto;
     margin-bottom: 2rem;
 }
 
@@ -1745,6 +1748,7 @@ position: absolute ;
     background: url('../assets/service_bg_3.jpg');
     padding-bottom: 3.5rem;
     overflow: hidden;
+    background-size: cover;
 }
 
 .media-header {
@@ -1983,7 +1987,10 @@ position: absolute ;
 
     /* overflow: hidden; */
 }
+.media-swiper-slide:not(.swiper-slide-active) .media-swiper-title{  
+    display: none;
 
+}
 .media-swiper-slide.swiper-slide-active {
     transform-origin: center;
     transform: scale(1.2);
@@ -2327,17 +2334,23 @@ position: absolute ;
 
 
 /* Media Center Css */
-.masonry-media-card.masonry-media-card-0 {
-    height: 15rem;
-}
 
+.masonry-media-cards-container{
+    gap: 0rem;
+}
 .masonry-media-card {
+    cursor: pointer;
     /* height: 18rem; */
-    width: 31.5%;
+    width: 100%;
     height: 21rem;
     margin-top: 2rem;
     position: relative;
 
+    
+}
+
+.masonry-media-card .media-card-inner-border{
+    width: 98%;
 }
 
 .masonry-media-card .media-card-title {
@@ -2368,13 +2381,6 @@ position: absolute ;
     transform: translate(0);
 }
 
-.masonry-media-card.masonry-media-card-2 {
-    height: 18rem;
-}
-
-.masonry-media-card.masonry-media-card-3 {
-    height: 31rem;
-}
 
 /*  Electricity Page : Overview Section*/
 .overview-section {
@@ -2922,6 +2928,12 @@ position: absolute ;
     .media-card-date {
         padding: 1rem;
     }
+    .masonry-media-cards-container{
+        flex-direction: column;
+    }
+    .masonry-media-card{
+        height: 33rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -2992,6 +3004,7 @@ position: absolute ;
     .main-header {
         height: auto;
         z-index: 99;
+        border-bottom: 1px solid #3C4B5C;
     }
 
 
@@ -3112,11 +3125,14 @@ position: absolute ;
 
     .upcoming-events-title {
         font-size: 2.4rem;
+        margin: 0;
         margin-bottom: 3rem;
     }
 
     .twitter-feed-container {
         display: flex;
+        width: 33%;
+        height: 34rem;
     }
     .events-card{
         height: 28rem;
@@ -3579,6 +3595,25 @@ position: absolute ;
     .services-links-button{
         margin-top: 3.5rem;
         margin-bottom: 0;
+    }
+    .masonry-media-card.masonry-media-card-0 {
+        height: 15rem;
+    }
+    
+    .masonry-media-card {
+        /* height: 18rem; */
+        width: 31.5%;
+        height: 21rem;
+        margin-top: 2rem;
+        position: relative;
+    
+    }
+    .masonry-media-card.masonry-media-card-2 {
+        height: 18rem;
+    }
+    
+    .masonry-media-card.masonry-media-card-3 {
+        height: 31rem;
     }
 }
 
