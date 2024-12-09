@@ -206,6 +206,15 @@ $(document).ready(function () {
 
   }
 
+  // masonrycontainer = querySelector('.masonry-media-cards-container')
+  var elem = document.querySelector('.masonry-media-cards-container');
+  var masonry = new Masonry(elem, {
+      itemSelector: '.masonry-media-card',
+      columnWidth: '.masonry-media-card',
+      gutter:32,
+      percentPosition: true
+  });
+
   //Landing Page section
   $('.hamburger-container').click(function () {
 
