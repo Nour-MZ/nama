@@ -219,12 +219,22 @@ $(document).ready(function () {
   $('.hamburger-container').click(function () {
 
 
-    $("body").toggleClass('active')
-    $('.header-links-container').toggleClass("active");
+   
+    $('.header-links-container').addClass("active");
+    
+    $("body").addClass('active')
     $('.main-header').addClass("active")
 
   })
+  $('.mobile-menu-title-x').click(function () {
 
+
+    $("body").removeClass('active')
+    $('.header-links-container').removeClass("active");
+    $('.main-header').removeClass("active")
+
+  })
+  
   $('.important-links-container').click(function () {
     // Check if the clicked element doesn't have the 'active' class
     if (!$(this).hasClass("active")) {
