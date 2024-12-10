@@ -115,6 +115,7 @@ ul {
     width: 100%;
     overflow: hidden;
     position: relative;
+    
 }
 
 .landing-pattern-container {
@@ -166,7 +167,7 @@ img.landing-pattern-light {
 
 .main-header {
 
-
+    pointer-events: none;
     display: flex;
     justify-content: space-between;
     z-index: 99;
@@ -184,8 +185,8 @@ img.landing-pattern-light {
 
 .main-header.active {
     z-index: 999;
-
-    border-bottom: 1px solid var(--border-color);
+    pointer-events: all;
+    /* border-bottom: 1px solid var(--border-color); */
     transform: translate(0) !important;
 
 }
@@ -202,6 +203,7 @@ img.landing-pattern-light {
 }
 
 .hamburger-container {
+    pointer-events: all;
     display: flex;
     position: relative;
     top: .5rem;
@@ -457,6 +459,8 @@ a.header-link-dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 99999999999999999;
+    position: relative;
 }
 
 .landing-subtitle {
@@ -534,16 +538,14 @@ a.header-link-dropdown {
     top: 0;
     height: 100%;
     z-index: 120;
-    background-color: rgba(255, 255, 255, 1);
+    /* background-color: rgba(255, 255, 255, 1); */
     transition: var(--animation);
     pointer-events: none;
     opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
     backdrop-filter: blur(10px);
-    background: url('../assets/Group\ 4114.png') center no-repeat;
-    background-size: 20rem;
+    /* background: url('../assets/Group\ 4114.png') center no-repeat;
+    background-size: 20rem; */
 
 }
 
@@ -553,15 +555,14 @@ a.header-link-dropdown {
 }
 
 .important-links-overlay-circle {
-    height: 21rem;
+    height: 26rem;
     opacity: 0;
     /* z-index: 9999; */
-    position: relative;
-    width: 21rem;
-    border-radius: 50%;
-    background: rgb(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    mask: radial-gradient(transparent 55px, #000 5px);
+    position: absolute;
+    width: 9rem;
+    bottom: 0;
+    right: 0;
+    /* mask: radial-gradient(transparent 55px, #000 5px); */
 }
 
 
@@ -569,7 +570,7 @@ a.header-link-dropdown {
 .important-links-overlay-circle-before,
 .important-links-overlay-circle-after {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     width: 100%;
     height: 2px;
@@ -583,34 +584,29 @@ a.header-link-dropdown {
     transform-origin: center;
 }
 
-.important-links-overlay-circle-before {
-    /* transform: scale(0) rotate(45deg); */
-
-}
-
-.important-links-overlay-circle-after {
-    /* transform: scale(0) rotate(-45deg); */
-
-}
 
 
 .important-links-item {
-    position: absolute;
+    position: relative;
     top: 8%;
     right: 50%;
     height: 4rem;
-    width: 6rem;
+    width: 12rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     opacity: 0;
+    transition: var(--animation);
 
+}
+.important-links-item.active{
+    opacity: 1;
 }
 
 .important-links-item::before {
     content: '';
-
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -632,30 +628,7 @@ a.header-link-dropdown {
     transform: scale(1);
 }
 
-.important-links-item:nth-child(5) {
-    transform: translate(50%, 200%);
-}
 
-.important-links-item:nth-child(6) {
-    top: 50%;
-    right: 14%;
-    transform: translate(-150%, -50%);
-}
-
-.important-links-item:nth-child(3) {
-    top: auto;
-    bottom: 0%;
-    right: 50%;
-    transform: translate(50%, -250%);
-}
-
-.important-links-item:nth-child(4) {
-    top: 50%;
-    bottom: auto;
-    right: auto;
-    left: 14%;
-    transform: translate(150%, -50%);
-}
 
 .important-links-icon {
     width: 100%;
@@ -663,10 +636,12 @@ a.header-link-dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    right: 1rem;
 }
 
 .important-links-icon img {
-    width: 50%;
+    width: 3rem;
     height: 100%;
 }
 
@@ -674,6 +649,16 @@ a.header-link-dropdown {
     color: white;
     margin-top: .2rem;
     color: #D5D8DA;
+    width: 20rem;
+    height: 55%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #302831;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .important-links-x {
@@ -2388,7 +2373,6 @@ position: absolute ;
     padding-bottom:2rem;
 }
 
-
 .overview-subtitle {
     border-radius: 2rem;
     border: 1px solid #DEDEDE;
@@ -2398,7 +2382,11 @@ position: absolute ;
     letter-spacing: 1px;
     font-size: .95rem;
     margin-bottom: 1rem;
+    margin: 0 auto;
+    display: block;
+    width: 7.5rem;
 }
+
 
 .overview-title {
     margin-top: 1rem;
@@ -2406,13 +2394,14 @@ position: absolute ;
     font-size: 2rem;
     font-family: avenirdemi;
     margin-bottom: 1rem;
-    padding-right: 1rem;
+    text-align: center;
 
 }
 
 .overview-paragraph {
     font-size: 1.05rem;
     line-height: 1.8rem;
+    text-align: center;
 }
 
 .overview-paragraph p {
@@ -2628,6 +2617,9 @@ position: absolute ;
     padding: 2rem;
     padding-right: 3rem;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .services-link-card-icon-container {
@@ -2937,11 +2929,30 @@ position: absolute ;
 }
 
 @media (min-width: 1200px) {
+    .important-links-overlay {
+
+        /* transition: var(--animation); */
+        pointer-events: none;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        background: url('../assets/Group\ 4114.png') center no-repeat;
+        background-size: 10rem;
+    
+    }
+    .important-links-overlay:not(.active){
+        background-size: 10rem !important;
+    }
     .important-links-overlay-circle {
         height: 30rem;
 
         width: 30rem;
-
+        border-radius: 50%;
+        background: rgb(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        position: relative;
         mask: radial-gradient(transparent 110px, #000 105px);
     }
 
@@ -2951,7 +2962,70 @@ position: absolute ;
         width: 10rem;
 
     }
+    .important-links-overlay-circle-before,
+    .important-links-overlay-circle-after {
 
+        display: block;
+    }
+    .important-links-item::before {
+        display: block;
+    }
+    .important-links-item {
+        position: absolute;
+        top: 8%;
+        right: 50%;
+        height: 4rem;
+        width: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    
+    }
+    .important-links-item:nth-child(5) {
+        transform: translate(50%, 200%);
+    }
+    
+    .important-links-item:nth-child(6) {
+        top: 50%;
+        right: 14%;
+        transform: translate(-150%, -50%);
+    }
+    
+    .important-links-item:nth-child(3) {
+        top: auto;
+        bottom: 0%;
+        right: 50%;
+        transform: translate(50%, -250%);
+    }
+    
+    .important-links-item:nth-child(4) {
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        left: 14%;
+        transform: translate(150%, -50%);
+    }
+    .important-links-text{
+        color: white;
+        margin-top: .2rem;
+        color: #D5D8DA;
+        width: auto;
+        height: auto;
+        display: block;
+        justify-content: start;
+        align-items: start;
+        padding: 0;
+        border-radius: 0;
+    }
+    .important-links-icon {
+        right: auto;
+    }
+    .important-links-icon img {
+        width: 50%;
+        height: 100%;
+    }
     .landing-swiper-slide {
         justify-content: start;
     }
@@ -3506,12 +3580,19 @@ position: absolute ;
 .media-swiper-button.swiper-button-prev {
     left: 7rem;
 }
+.overview-subtitle {
+    width: auto;
+    margin: auto;
+    display: inline-block;
+}
+
     /* Other Page */
     .overview-images{
         display: flex;
     }
     .overview-title {
         padding-right: 3rem;
+        text-align: start;
     }
 
     .overview-section {
@@ -3523,7 +3604,9 @@ position: absolute ;
         padding-right: 8rem;
 
     }
- 
+    .overview-paragraph{
+        text-align: start;
+    }
 
     .account-information-section {
         height: 20rem;
@@ -3546,6 +3629,11 @@ position: absolute ;
         grid-template-columns: repeat(3, 1fr);
 
 
+    }
+    .services-links-card{
+        text-align: start;
+    justify-content: start;
+    align-items: start;
     }
     .services-links-title-container{
         width: 51%;

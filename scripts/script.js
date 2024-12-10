@@ -30,10 +30,22 @@ $(document).ready(function () {
       { scale: 1, rotation: -45, duration: 2.5, opacity: 1, ease: "power4.out" }, // To values
       "<"
     )
-    .to('.important-links-item:nth-child(5)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
-    .to('.important-links-item:nth-child(6)', { y: "-0%", x: "45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
-    .to('.important-links-item:nth-child(3)', { y: "-50%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
-    .to('.important-links-item:nth-child(4)', { y: "-0%", x: "-45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    .add(() => {
+      document.querySelector('.important-links-item:nth-child(5)').classList.add('active');
+    }, "<0.2")
+    .add(() => {
+      document.querySelector('.important-links-item:nth-child(6)').classList.add('active');
+    }, "<0.2")
+    .add(() => {
+      document.querySelector('.important-links-item:nth-child(3)').classList.add('active');
+    }, "<0.2")
+    .add(() => {
+      document.querySelector('.important-links-item:nth-child(4)').classList.add('active');
+    }, "<0.2");
+    // .to('.important-links-item:nth-child(5)', { y: "0%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    // .to('.important-links-item:nth-child(6)', { y: "-0%", x: "45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    // .to('.important-links-item:nth-child(3)', { y: "-50%", x: "50%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
+    // .to('.important-links-item:nth-child(4)', { y: "-0%", x: "-45%", duration: 0.4, opacity: 1, ease: "power3.out" }, "<0.2")
 
 
 
