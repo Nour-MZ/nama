@@ -335,6 +335,11 @@ $(document).ready(function () {
 
   });
 
+  $('.masonry-media-card').click(function () {
+    $('.media-center-modal').addClass("active")
+
+  });
+
   $('.media-modal-close-button').click(function () {
     $('.media-center-modal').removeClass("active")
 
