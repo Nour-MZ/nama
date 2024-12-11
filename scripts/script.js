@@ -1,8 +1,6 @@
 
 $(document).ready(function () {
 
-
-  //gasp animations
   const landingtimeline = gsap.timeline({ defaults: { duration: 1 } });
 
   landingtimeline.to(".landing-pattern-container", { y: 0 });
@@ -60,6 +58,30 @@ $(document).ready(function () {
   }
 
  
+  function addDropdownActive() {
+    $('.main-header').addClass('dropdownactive');
+}
+
+
+
+function removeDropdownActive() {
+
+    if (!$('.header-link-dropdown').is(':hover') && 
+        !$('.header-link-dropdown-after').is(':hover') && 
+        !$('.header-link-dropdown-menu').is(':hover')) {
+        $('.main-header').removeClass('dropdownactive');
+    }
+}
+
+// Hover events for all relevant elements
+$('.header-link-dropdown, .header-link-dropdown-after, .header-link-dropdown-menu').hover(
+    addDropdownActive,
+    removeDropdownActive
+);
+
+
+
+
 
 
 
@@ -165,14 +187,6 @@ $(document).ready(function () {
     },
   });
 
-  // ScrollTrigger.batch(".media-card-data", {
-  //   once: true,
-  //   start: "top 95%",
-  //   onEnter: (element, triggers) => {
-  //       gsap.to(element, { y: 0, opacity: 1, stagger: 0.2, duration: 1.5 });
-  //     },
-  // });
-
 
   ScrollTrigger.batch(".footer-links-container", {
     once: true,
@@ -184,6 +198,72 @@ $(document).ready(function () {
       gsap.to(('.footer-lower-links-container'), { x: 0, opacity: 1, delay: 2, stagger: 0.2, duration: 1 });
       gsap.to(('.footer-copyrights-container'), { x: 0, opacity: 1, delay: 2, stagger: 0.2, duration: 1 });
 
+    },
+  });
+
+  // Subpages animations
+
+  ScrollTrigger.batch(".overview-content", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { x: 0, opacity: 1, stagger: 0.2, duration: 1 });
+      gsap.to(('.overview-images'), { x: 0, opacity: 1,  stagger: 0.2, duration: 1 });
+    },
+  });
+
+
+  ScrollTrigger.batch(".account-information-text-container", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { x: 0, opacity: 1, stagger: 0.2, duration: 1 });
+      gsap.to(('.account-information-button'), { x: 0, opacity: 1, stagger: 0.2, duration: 1 });
+    },
+  });
+
+  ScrollTrigger.batch(".services-links-title-container", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { y: 0, opacity: 1, stagger: 0.2, duration: 1 });
+    },
+  });
+  ScrollTrigger.batch(".services-links-card", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { y: 0, opacity: 1, stagger: 0.2, duration: 1 });
+    },
+  });
+  ScrollTrigger.batch(".services-links-button ", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { y: 0, opacity: 1, stagger: 0.2, duration: 1 });
+    },
+  });
+
+  ScrollTrigger.batch(".company-code-title ", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { y: 0, opacity: 1, stagger: 0.2, duration: 1 });
+    },
+  });
+  ScrollTrigger.batch(".company-code-card ", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => {
+      gsap.to((element), { y: 0, opacity: 1, stagger: 0.2, duration: 1 });
+    },
+  });
+
+  ScrollTrigger.batch(".footer-quick-links-item", {
+    once: true,
+    start: "top 95%",
+    onEnter: (element, triggers) => { 
+      gsap.to((element), {  opacity: 1, stagger: 0.2, duration: 1 });
     },
   });
 
@@ -230,27 +310,14 @@ $(document).ready(function () {
     }
 
   }
-
-  // masonrycontainer = querySelector('.masonry-media-cards-container')
-  // var elem = document.querySelector('.masonry-media-cards-container');
-  // var masonry = new Masonry(elem, {
-  //     itemSelector: '.masonry-media-card',
-  //     columnWidth: '.masonry-media-card',
-  //     gutter:32,
-  //     percentPosition: true
-  // });
-
-  //Landing Page section
+ 
   $('.hamburger-container').click(function () {
 
-
-
     $('.header-links-container').addClass("active");
-
     $("body").addClass('active')
-    $('.main-header').addClass("active")
 
   })
+ 
   $('.mobile-menu-title-x').click(function () {
 
 
@@ -259,6 +326,37 @@ $(document).ready(function () {
     $('.main-header').removeClass("active")
 
   })
+  
+  $('.header-link-dropdown').click(function () {
+    $(this).find('.header-link-dropdown-menu').addClass("active");
+  })
+
+
+  $('.mobile-menu-subtitle-text').click(function (e) {
+    e.stopPropagation();
+    $('.header-link-dropdown-menu').removeClass("active");
+
+  })
+
+  
+  $('.header-link-dropdown-menu-item-container').click(function (e) {
+    
+    const itemList = $(this).find('.header-link-dropdown-menu-item-list');
+    itemList.addClass("active");
+
+  });
+
+  $('.mobile-menu-title .mobile-menu-subtitle-suby').click(function (e) {
+    
+    $('.header-link-dropdown-menu-item-list').removeClass('active');
+    
+
+  });
+
+ 
+
+
+
 
   $('.important-links-container').click(function () {
     // Check if the clicked element doesn't have the 'active' class
