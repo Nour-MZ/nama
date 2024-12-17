@@ -1,15 +1,139 @@
 
 $(document).ready(function () {
 
-
-  //yeader
-
-
   const landingtimeline = gsap.timeline({ defaults: { duration: 1 } });
+  
+   var $wrapper = $('<div class="main-header-left-container d-flex"></div>');
+
+    // Select the two sibling divs
+    var $siteIcon = $('#siteIcon');
+    var $headerLinks = $('.header-links-container');
+
+    // Wrap the selected divs with the new div
+    $siteIcon.add($headerLinks).wrapAll($wrapper);
+    const Linkscontainer = $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root');
+	const allLinks = $('#DeltaTopNavigation .ms-core-listMenu-root > .static');
+	const dropdownlink = $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children');
+    const dropdownmenu = $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic');
+    const subdropdown = $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic > .dynamic-children');
+	const subdropdownitemslist = $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic > .dynamic-children > ul.dynamic');
+	
+	$('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic > li.dynamic:not(.dynamic-children)').addClass('header-link');
+
+	Linkscontainer.addClass(" header-links-ul");
+	const dropdownbackdiv = `<li class="mobile-menu-title header-link header-main-title-link">
+		                        <div class="mobile-menu-title-text">Main Menu</div>
+		                        <div class="mobile-menu-title-x">
+		                            <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/close-svgrepo-com (1).svg" alt="">
+		                        </div>
+		                    </li>`
+                           
+    Linkscontainer.prepend(dropdownbackdiv)                       
+                            
+    allLinks.addClass('header-link');
+
+    dropdownlink.addClass("header-link-dropdown");
+	dropdownlink.append(`<div class="header-link-dropwdown-arrow">
+                            <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/Path 7.svg" alt="">
+                            <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/asc.svg" alt="">
+                        </div>`)
+	
+    dropdownmenu.addClass("header-link-dropdown-menu");	    
+    
+	dropdownmenu.each(function() {
+	    var itemText = $(this).siblings('a').find('span.menu-item-text').text();
+	    const subdropdownbackdiv = `<div class="mobile-menu-title header-link sub-header-main-title-link">
+                                    <div class="mobile-menu-subtitle-suby">${itemText}</div>
+                                    <div class="mobile-menu-title-x">
+                                        <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/close-svgrepo-com (1).svg" alt="">
+                                    </div>
+                                </div>`
+ 		$(this).prepend(subdropdownbackdiv)	                               
+	    console.log(itemText); 
+	});
+         
+	
+	
+    subdropdown.addClass("header-link-dropdown-menu-item-container");
+    $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic > .dynamic-children > .menu-item .menu-item-text').addClass('header-link-dropdown-menu-item-title-text')
+
+    const subdropdowntitle = $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic > .dynamic-children > .menu-item').addClass('header-link-dropdown-menu-item-title')
+	subdropdowntitle.append(`<div class="header-links-arrow">
+                                <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/asc.svg" alt="">
+                            </div>`)
+	
+
+
+    subdropdownitemslist.addClass("header-link-dropdown-menu-item-list")
+    $('#DeltaTopNavigation > .ms-core-listMenu-horizontalBox > ul.ms-core-listMenu-root > .dynamic-children > ul.dynamic > .dynamic-children > ul.dynamic li.dynamic').addClass(' header-link-dropdown-menu-item-list-item')   	                         
+     
+    subdropdownitemslist.each(function() {
+	    var itemText = $(this).siblings('a').find('span.menu-item-text').text();
+	    const subsubdropdownbackdiv = `<div class="mobile-menu-title header-link sub-sub-header-main-title-link">
+		                                    <div class="mobile-menu-subtitle-suby">${itemText}</div>
+		                                    <div class="mobile-menu-title-x">
+		                                        <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/close-svgrepo-com (1).svg" alt="">
+		                                    </div>
+		                                </div>`
+ 		$(this).prepend(subsubdropdownbackdiv)	                               
+	    console.log(itemText); 
+	});
+
+	
+     $('.sub-header-main-title-link').click(function () {
+
+    	setTimeout(() => {
+		$('.header-link-dropdown-menu').removeClass('active');
+		}, 50);
+
+   		
+    })
+    
+      $('.sub-sub-header-main-title-link').click(function () {
+    	setTimeout(() => {
+    	$('.header-link-dropdown-menu-item-list').removeClass('active');
+		
+		}, 50);
+
+   		
+    })
+    
+   
+	    
+	dropdownlink.each(function() {
+        const newDiv = $('<div class="header-link-dropdown-after"></div>');
+        $(this).append(newDiv);
+    });
+    
+    $('.header-link-dropdown-after').each(function() {
+		        const parent = $(this).parent();
+		      		       	const parentWidth = parent[0].offsetWidth;
+		       	const newWidth = parentWidth * 1.0;
+		       	$(this).css('width', newWidth + 'px');
+		      
+		        
+    });
+    
+  
+   	$('.header-link-dropdown').each(function(){
+ 		if( $(this).find('.header-link-dropdown-menu-item-list').length<=0){
+ 			$(this).find('.header-link-dropdown-menu').addClass('small-menu');
+ 			$(this).addClass('small-active')
+ 		} 		
+ 	})
+
+    
+  $('#s4-workspace').scroll(function() {
+		setTimeout(() => {
+		ScrollTrigger.refresh();
+		}, 500);
+
+	});
+
 
   landingtimeline.to(".landing-pattern-container", { y: 0 });
   landingtimeline.to(".main-header", { y: "0" }, 0.3);
-  landingtimeline.to(".landing-content-main", { x: "0" });
+  landingtimeline.to(".landing-content-main", { x: "0", opacity: "1" });
   landingtimeline.to(".landing-swiper-pagination", { opacity: "1", duration: 0.5 }, "<"); // Same start time
   landingtimeline.to(".important-links-container", { opacity: "1", duration: 0.5 }, "<");
 
@@ -62,18 +186,19 @@ $(document).ready(function () {
   }
 
  
-
-
-
-
-function addDropdownActive() {
-        $('.main-header').addClass('dropdownactive');
+  
+	function addDropdownActive() {
+	        $('.main-header').addClass('dropdownactive');
+	         $('.header-container-overlay').addClass('active');
     }
 
     // Function to remove the dropdown active class
     function removeDropdownActive() {
         $('.main-header').removeClass('dropdownactive');
         $('.header-link-dropdown').removeClass('active');
+        $('.header-container-overlay').removeClass('active');
+
+       
     }
 
     // Track hover state
@@ -81,24 +206,21 @@ function addDropdownActive() {
     let isAfterHovered = false;
     let isMenuHovered = false;
 
+
     // Bind mouse enter and leave events for each element
     $('.header-link-dropdown').on('mouseenter', function() {
-        dropdownextra = $(this).find('.header-link-dropdown-menu-item-list');
-        if(dropdownextra.length <= 0){
-          console.log('small drop down')
-        }
-        else{
-          console.log('large dropdown')
-        }
         $(this).addClass('active');
+     
+        
         isDropdownHovered = true;
         addDropdownActive();
     }).on('mouseleave', function() {
         isDropdownHovered = false;
         checkRemoveDropdownActive();
     });
-
+    
     $('.header-link-dropdown-after').on('mouseenter', function() {
+       
         isAfterHovered = true;
         addDropdownActive();
     }).on('mouseleave', function() {
@@ -122,8 +244,7 @@ function addDropdownActive() {
     }
 
 
-
-    ScrollTrigger.batch(".masonry-media-card", {
+ScrollTrigger.batch(".masonry-media-card", {
       once: true,
       start: "top 95%",
       onEnter: (element, triggers) => {
@@ -131,6 +252,9 @@ function addDropdownActive() {
   
       },
     });
+
+
+	
 
   ScrollTrigger.batch(".services-card", {
     once: true,
@@ -317,7 +441,7 @@ function addDropdownActive() {
   landingswiperelement = document.querySelector('.landing-swiper')
   mediaswiperelement = document.querySelector('.media-swiper')
 
-  
+
   if (landingswiperelement) {
     const landingswiper = new Swiper('.landing-swiper', {
       direction: 'vertical',
@@ -357,20 +481,23 @@ function addDropdownActive() {
     }
 
   }
-
-
- 
+  dropdownlink.click(function (e) {e.preventDefault();})
+   
+  $('.header-link-dropdown-menu-item-title').click(function (e) {e.preventDefault();})
+  $('button').click(function (e) {e.preventDefault();})
+  
   $('.hamburger-container').click(function () {
 
     $('.header-links-container').addClass("active");
     $("body").addClass('active')
-
+	$("#s4-workspace").addClass('active')
   })
  
-  $('.mobile-menu-title-x').click(function () {
+  $('.mobile-menu-title-x').click(function (e) {
 
-
+e.preventDefault();
     $("body").removeClass('active')
+    $("#s4-workspace").removeClass('active')
     $('.header-links-container').removeClass("active");
     $('.main-header').removeClass("active")
 
@@ -407,8 +534,9 @@ function addDropdownActive() {
 
 
 
-  $('.important-links-container').click(function () {
+  $('.important-links-container').click(function (e) {
     // Check if the clicked element doesn't have the 'active' class
+    e.preventDefault();
     if (!$(this).hasClass("active")) {
       $(".important-links-border").addClass('transition')
       $("body").addClass('active')
@@ -429,8 +557,8 @@ function addDropdownActive() {
   });
 
 
-  $('.important-links-x').click(function () {
-
+  $('.important-links-x').click(function (e) {
+	e.preventDefault();
     $('.important-links-container').removeClass("active");
     $('.important-links-overlay').removeClass("active")
     $("body").removeClass("active")
@@ -454,17 +582,17 @@ function addDropdownActive() {
     $(this).addClass("active");
 
   });
-  
 
   function handleFooterToggle() {
 
     if ($(window).width() > 1200) {
+    
       quicklinksswiper = document.querySelector('.footer-quick-links-swiper')
-      console.log(quicklinksswiper)
+      
       if (quicklinksswiper) {
         const wquicklinksswiper = new Swiper('.footer-quick-links-swiper', {
           direction: 'horizontal',
-          slidesPerView: "5",
+          slidesPerView: "6",
           centeredSlides: false,
           spaceBetween: 0,
           loop: false,
@@ -475,7 +603,6 @@ function addDropdownActive() {
         wquicklinksswiper.slideToLoop(0, 0);
     
       }
-
 
       $(".footer-link-container-title").removeAttr("data-bs-toggle");
 
@@ -505,7 +632,8 @@ function addDropdownActive() {
 
   });
 
-  $('.media-modal-close-button').click(function () {
+  $('.media-modal-close-button').click(function (e) {
+  e.preventDefault();
     $('.media-center-modal').removeClass("active")
 
   });

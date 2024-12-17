@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?><!--SPG:
+
+This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
+
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://srv-sp19:90/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsrv%2Dsp19%3A90%2F%5Fcatalogs%2Fmasterpage%2FProject%2Findex%5FEn%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+
+-->
+<!DOCTYPE html[]>
+<html lang="en" dir="ltr" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!--CS: Start Page Head Contents Snippet-->
+        <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+        <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+        <!--SID:00 -->
+        <link rel=" NDS fav icon" sizes="180x180" href="/_catalogs/masterpage/NDS/media/favicon.ico" />
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="" />
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <!-- Twitter Meta Tags -->
+        <meta property="twitter:url" content="" />
+        <meta name="twitter:title" content="" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:image" content="" />
+        <!--DC:Abraj specializes in drilling, oilfield services and well engineering solutions-->
+        <!--MS:<SharePoint:RobotsMetaTag runat="server">-->
+        <!--ME:</SharePoint:RobotsMetaTag>-->
+        <!--MS:<SharePoint:PageTitle runat="server">-->
+            <!--MS:<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">-->
+                <!--MS:<SharePoint:ProjectProperty Property="Title" runat="server">-->
+                <!--ME:</SharePoint:ProjectProperty>-->
+            <!--ME:</asp:ContentPlaceHolder>-->
+        <!--ME:</SharePoint:PageTitle>-->
+        <!--MS:<SharePoint:StartScript runat="server">-->
+        <!--ME:</SharePoint:StartScript>-->
+        <!--MS:<SharePoint:CssLink runat="server" Version="15">-->
+        <!--ME:</SharePoint:CssLink>-->
+        <!--MS:<SharePoint:CacheManifestLink runat="server">-->
+        <!--ME:</SharePoint:CacheManifestLink>-->
+        <!--MS:<SharePoint:PageRenderMode runat="server" RenderModeType="Standard">-->
+        <!--ME:</SharePoint:PageRenderMode>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:CustomJSUrl runat="server">-->
+        <!--ME:</SharePoint:CustomJSUrl>-->
+        <!--MS:<SharePoint:SoapDiscoveryLink runat="server">-->
+        <!--ME:</SharePoint:SoapDiscoveryLink>-->
+        <!--MS:<SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">-->
+            <!--MS:<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">-->
+            <!--ME:</asp:ContentPlaceHolder>-->
+            <!--MS:<SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">-->
+            <!--ME:</SharePoint:DelegateControl>-->
+            <!--MS:<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">-->
+            <!--ME:</asp:ContentPlaceHolder>-->
+        <!--ME:</SharePoint:AjaxDelta>-->
+        <!--MS:<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">-->
+        <!--ME:</SharePoint:CssRegistration>-->
+        <!--MS:<SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">-->
+            <!--MS:<WebPartPages:SPWebPartManager runat="server">-->
+            <!--ME:</WebPartPages:SPWebPartManager>-->
+        <!--ME:</SharePoint:AjaxDelta>-->
+        <!--CE: End Page Head Contents Snippet-->
+        <!--DC:Abraj-->
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/style.css?var=1" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/mainstyles.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/animate.min.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/jquery-ui.min.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/NDS/css/smr.css" />
+        <!--FONT AWESOME-->
+        <script type="text/javascript">//<![CDATA[
+                RegisterSod("srch.resources.resx", "\u002f_layouts\u002f15\u002f1025\u002fsrch.resources.js?rev=dww\u00252Bx2efYs6Syum62UWorA\u00253D\u00253DTAG0");
+              
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <script type="text/javascript">//<![CDATA[
+                RegisterSod("search.clientcontrols.js", "\u002f_layouts\u002f15\u002fsearch.clientcontrols.js?rev=xgTuNRzK\u00252B28qr6bjGThpIw\u00253D\u00253DTAG0");
+                RegisterSodDep("search.clientcontrols.js", "sp.init.js");
+                RegisterSodDep("search.clientcontrols.js", "clientrenderer.js");
+                RegisterSodDep("search.clientcontrols.js", "srch.resources.resx");
+            
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <script type="text/javascript">//<![CDATA[
+                RegisterSod("sp.search.js", "\u002f_layouts\u002f15\u002fsp.search.js?rev=eMyDf7ZGV6rTjB2sDSdovA\u00253D\u00253DTAG0");
+                RegisterSodDep("sp.search.js", "sp.init.js");
+                RegisterSodDep("sp.search.js", "sp.runtime.js");
+            
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <script type="text/javascript">//<![CDATA[
+                RegisterSod("ajaxtoolkit.js", "\u002f_layouts\u002f15\u002fajaxtoolkit.js?rev=I3jVxnVkBqeUZ\u00252FWA\u00252BgwTLg\u00253D\u00253DTAG0");
+                RegisterSodDep("ajaxtoolkit.js", "search.clientcontrols.js");
+            
+            
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <!--[if gte mso 9]><xml>
+          <mso:CustomDocumentProperties>
+          <mso:ContentTypeId msdt:dt="string">0x0101000F1C8B9E0EB4BE489F09807B2C53288F0054AD6EF48B9F7B45A142F8173F171BD10003D357F861E29844953D5CAA1D4D8A3A0008F098E9396FA1478A141755E5497E19</mso:ContentTypeId>
+          <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+          <mso:HtmlDesignFromMaster msdt:dt="string">http://srv-sp19:90/_catalogs/masterpage/Project/index_En.html, http://srv-sp19:90/_catalogs/masterpage/Project/index_En.html</mso:HtmlDesignFromMaster>
+          <mso:HtmlDesignStatusAndPreview msdt:dt="string">http://srv-sp19:90/_catalogs/masterpage/Project/index_En.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+          
+      <mso:FSObjType msdt:dt="string">0</mso:FSObjType>
+      <mso:FileDirRef msdt:dt="string">_catalogs/masterpage/Abraj</mso:FileDirRef>
+      <mso:ContentType msdt:dt="string">Html Master Page</mso:ContentType>
+      <mso:FileLeafRef msdt:dt="string">index.html</mso:FileLeafRef>
+      <mso:UIVersion msdt:dt="string">15</mso:UIVersion>
+    
+    <mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+</mso:CustomDocumentProperties>
+          </xml><![endif]-->
+        <script>//<![CDATA[
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-161594602-1');
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript" src="/_catalogs/masterpage/NDS/js/jquery.min.js">//<![CDATA[
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <!--CS: Start Ribbon Snippet-->
+        <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+        <!--SPM:<%@Register Tagprefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>-->
+        <!--MS:<SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">-->
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <!--MS:<SharePoint:EncodedLiteral runat="server" text="&#60;%$Resources:wss,master_turnonaccessibility%&#62;" EncodeMethod="HtmlEncode">-->
+                    <!--ME:</SharePoint:EncodedLiteral>-->
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <!--MS:<SharePoint:EncodedLiteral runat="server" text="&#60;%$Resources:wss,master_turnoffaccessibility%&#62;" EncodeMethod="HtmlEncode">-->
+                    <!--ME:</SharePoint:EncodedLiteral>-->
+                </a>
+            </div>
+        <!--ME:</SharePoint:SPSecurityTrimmedControl>-->
+        <div id="ms-designer-ribbon" class="collapse">
+            <!--SID:02 {Ribbon}-->
+            <!--PS: Start of READ-ONLY PREVIEW (do not modify) --><div class="DefaultContentBlock" style="background:rgb(0, 114, 198); color:white; width:100%; padding:8px; height:64px; overflow:hidden;">The SharePoint ribbon will be here when your file is either previewed on or applied to your site.</div><!--PE: End of READ-ONLY PREVIEW -->
+        </div>
+        <!--MS:<SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">-->
+            <!--MS:<wssucw:Welcome runat="server" EnableViewState="false">-->
+            <!--ME:</wssucw:Welcome>-->
+        <!--ME:</SharePoint:SPSecurityTrimmedControl>-->
+        <!--CE: End Ribbon Snippet-->
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+                <!-- Start Navbar -->
+                <!-- navbar-fixed-top -->
+                <div class="body">
+                    <header id="header" class="header-flex header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+                        <!-- top nav -->
+                        <div class="header-body">
+                            <div class="header-container header-border hidden">
+                                <nav class="navbar navbar-expand-sm container">
+                                    <div class="flex-nav">
+                                        <div class="nav-logo">
+                                            <a href="/en-us/pages/dashboard.aspx">
+                                                <img id="logo" class="strong-logo" src="/_catalogs/masterpage/NDS/media/Dhofar Logo colored.svg" />
+                                            </a>
+                                        </div>
+                                        <div class="header-container header-menu ">
+                                            <div class="header-row">
+                                                <div class="header-column">
+                                                    <div class="header-row">
+                                                        <div class="header-nav header-nav-top-line">
+                                                            <div class="btn header-btn-collapse-nav header-menu-btn">
+                                                                <span class="icon-bar">
+                                                                </span>
+                                                                <span class="icon-bar">
+                                                                </span>
+                                                                <span class="icon-bar">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-nav-main">
+                                                            <nav>
+                                                                <ul class="nav nav-pills" id="mainNav">
+                                                                    <!-- DN Menu Branding -->
+                                                                    <div class="menuSection">
+                                                                        <!-- menu oob start -->
+                                                                        <!--CS: Start Top Navigation Snippet-->
+                                                                        <!--SPM:<SharePoint:AjaxDelta id="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline" runat="server">-->
+                                                                        <!--SPM:<SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">-->
+                                                                        <!--SPM:<Template_Controls>-->
+                                                                        <!--SPM:<asp:SiteMapDataSource 
+                                                      ShowStartingNode="False"
+                                                      SiteMapProvider="SPNavigationProvider" 
+                                                      id="topSiteMap" 
+                                                      runat="server"
+                                                      StartingNodeUrl="sid:1002"/>-->
+                                                                        <!--SPM:</Template_Controls>-->
+                                                                        <!--SPM:</SharePoint:DelegateControl>-->
+                                                                        <a name="startNavigation">
+                                                                        </a>
+                                                                        <!--SPM:<asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">-->
+                                                                        <!--SPM:<SharePoint:AspMenu 
+                                                  ID="TopNavigationMenu" 
+                                                  Runat="server" 
+                                                  EnableViewState="false"
+                                                  DataSourceID="topSiteMap"
+                                                  AccessKey="&#60;%$Resources:wss,navigation_accesskey%&#62;"
+                                                  UseSimpleRendering="true"
+                                                  UseSeparateCss="false"
+                                                  Orientation="Horizontal"
+                                                  StaticDisplayLevels="2"
+                                                  AdjustForShowStartingNode="true"
+                                                  MaximumDynamicDisplayLevels="2"
+                                                  SkipLinkText=""/>-->
+                                                                        <!--PS: Start of READ-ONLY PREVIEW (do not modify)--><link rel="stylesheet" href="http://win12/_layouts/15/1033/styles/menu-21.css" /><div id="zz7_TopNavigationMenu" class=" noindex ms-core-listMenu-horizontalBox"><ul id="zz9_RootAspMenu" class="root ms-core-listMenu-root static"><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" title="Default Publishing Site" href="#" accesskey="1"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Default Publishing Site</span></span></a></li></ul></div><!--PE: End of READ-ONLY PREVIEW-->
+                                                                        <!--SPM:</asp:ContentPlaceHolder>-->
+                                                                        <!--SPM:</SharePoint:AjaxDelta>-->
+                                                                        <!--CE: End Top Navigation Snippet-->
+                                                                        <!-- menu oob end -->
+                                                                        <!-- Language Dropdown -->
+                                                                        <div class="language-switch">
+                                                                            <a href="#" id="langBtn">عربي
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- end DN Menu Branding -->
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- SEARCH BUTTON -->
+                                        <div class="search d-none">
+                                            <button type="button" id="searchid" aria-label="search">
+                                                <svg viewBox="0 0 64 64">
+                                                    <g id="Layer_63" data-name="Layer 63">
+                                                        <path d="M53.08,51l-9.84-9.84c10.24-11.82,1.63-30.7-14.15-30.64a18.63,18.63,0,0,0-18.61,18.6c-.06,15.79,18.82,24.4,30.64,14.16L51,53.08A1.5,1.5,0,0,0,53.08,51ZM13.48,29.08a15.62,15.62,0,0,1,15.61-15.6c20.69.86,20.69,30.35,0,31.21A15.62,15.62,0,0,1,13.48,29.08Z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <!-- account informations -->
+                                        <div class="dropdown user">
+                                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" aria-label="User Menu">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 71 71" fill="none">
+                                                    <path d="M0 35.5C0 15.8939 15.8939 0 35.5 0C55.1061 0 71 15.8939 71 35.5C71 55.1061 55.1061 71 35.5 71C15.8939 71 0 55.1061 0 35.5Z" fill="#F2F2F2">
+                                                    </path>
+                                                    <path d="M22 52C22 45.057 28.0442 39.4286 35.5 39.4286C42.9559 39.4286 49 45.057 49 52H45.625C45.625 46.7928 41.0919 42.5714 35.5 42.5714C29.9081 42.5714 25.375 46.7928 25.375 52H22ZM35.5 37.8571C29.9059 37.8571 25.375 33.6379 25.375 28.4286C25.375 23.2193 29.9059 19 35.5 19C41.0941 19 45.625 23.2193 45.625 28.4286C45.625 33.6379 41.0941 37.8571 35.5 37.8571ZM35.5 34.7143C39.2294 34.7143 42.25 31.9014 42.25 28.4286C42.25 24.9557 39.2294 22.1429 35.5 22.1429C31.7706 22.1429 28.75 24.9557 28.75 28.4286C28.75 31.9014 31.7706 34.7143 35.5 34.7143Z" fill="#868686">
+                                                    </path>
+                                                </svg>
+                                                <div class="icon">
+                                                    <svg width="16" height="16" fill="#72437B" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="/en-us/pages/UserProfile.aspx">
+                                                    <div>
+                                                        <div class="icon">
+                                                            <svg width="18" height="21" viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M7.62791 12.3953V14.3023C4.46832 14.3023 1.90698 16.8637 1.90698 20.0233H0C0 15.8105 3.41513 12.3953 7.62791 12.3953ZM7.62791 11.4419C4.46709 11.4419 1.90698 8.88174 1.90698 5.72093C1.90698 2.56012 4.46709 0 7.62791 0C10.7887 0 13.3488 2.56012 13.3488 5.72093C13.3488 8.88174 10.7887 11.4419 7.62791 11.4419ZM7.62791 9.53488C9.73512 9.53488 11.4419 7.82814 11.4419 5.72093C11.4419 3.61372 9.73512 1.90698 7.62791 1.90698C5.5207 1.90698 3.81395 3.61372 3.81395 5.72093C3.81395 7.82814 5.5207 9.53488 7.62791 9.53488ZM10.1018 16.9831C10.0428 16.7348 10.0116 16.4757 10.0116 16.2093C10.0116 15.943 10.0428 15.6839 10.1017 15.4356L9.15625 14.8898L10.1097 13.2382L11.0559 13.7845C11.4307 13.43 11.8877 13.1614 12.3953 13.0103V11.9186H14.3023V13.0103C14.81 13.1614 15.2669 13.43 15.6417 13.7845L16.5879 13.2381L17.5415 14.8897L16.5959 15.4355C16.6549 15.6839 16.686 15.943 16.686 16.2093C16.686 16.4756 16.6549 16.7347 16.5959 16.983L17.5415 17.5288L16.588 19.1804L15.6418 18.634C15.267 18.9886 14.8101 19.2572 14.3024 19.4083V20.5H12.3954V19.4084C11.8878 19.2573 11.4308 18.9887 11.056 18.6341L10.1098 19.1805L9.15625 17.5289L10.1018 16.9831ZM13.3488 17.6395C14.1387 17.6395 14.7791 16.9992 14.7791 16.2093C14.7791 15.4194 14.1387 14.7791 13.3488 14.7791C12.559 14.7791 11.9186 15.4194 11.9186 16.2093C11.9186 16.9992 12.559 17.6395 13.3488 17.6395Z" fill="#484848" />
+                                                            </svg>
+                                                        </div>
+                                                        <span>My Profile
+                                                    
+                                                    
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item" id="O365_SubLink_ShellSignout" href="javascript:SuiteOnClick(&quot;STSNavigate2\u0028event,\u0027\u002fen-us\u002f_layouts\u002f15\u002fSignOut.aspx\u0027\u0029;&quot;)">
+                                                    <div>
+                                                        <div class="icon">
+                                                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M0.9 18.5C0.402948 18.5 0 18.0971 0 17.6V1.4C0 0.902948 0.402948 0.5 0.9 0.5H13.5C13.9971 0.5 14.4 0.902948 14.4 1.4V4.1H12.6V2.3H1.8V16.7H12.6V14.9H14.4V17.6C14.4 18.0971 13.9971 18.5 13.5 18.5H0.9ZM12.6 13.1V10.4H6.3V8.6H12.6V5.9L17.1 9.5L12.6 13.1Z" fill="#484848" />
+                                                            </svg>
+                                                        </div>
+                                                        <span>Sign out
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="mobile-view">
+                                            <div class="setting">
+                                            </div>
+                                        </div>
+                                        <div class="up d-none d-lg-flex align-items-center justify-content-center mr-2">
+                                            <button type="button" id="close-ribbon" class="btn btn-primary btn-close-ribbon hidden collapsed" data-toggle="collapse" data-target="#ms-designer-ribbon" aria-expanded="false">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- End Navbar -->
+                    <div class="main-content-body">
+                        <div data-name="ContentPlaceHolderMain" id="ContentPlaceHolderMain">
+                            <!--CS: Start PlaceHolderMain Snippet-->
+                            <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">-->
+                                <!--MS:<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">-->
+                                    <div class="DefaultContentBlock" style="border:medium black solid; background:yellow; color:black; margin:20px; padding:10px;">
+                                              This div, which you should delete, represents the content area that your Page Layouts and pages will fill. Design your Master Page around this content placeholder.                                    
+                                        
+                                        
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    </div>
+                                <!--ME:</asp:ContentPlaceHolder>-->
+                            <!--ME:</SharePoint:AjaxDelta>-->
+                            <!--CE: End PlaceHolderMain Snippet-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-info btn-lg" id="hidbtnpopup" type="button" data-toggle="modal" data-target="#myModal" style="display: none;">Open Modal
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </button>
+        <div class="overlay-shadow">
+        </div>
+        <!-- SEARCH POPUP -->
+        <div id="search" class="hidden">
+            <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+                <div webpartid="00000000-0000-0000-0000-000000000000" haspers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " onlyformepart="true" allowdelete="false" style="">
+                    <div componentid="ctl00_SmallSearchInputBox1_csr" id="ctl00_SmallSearchInputBox1_csr" class="d-flex align-items-center">
+                        <div id="SearchBox" name="Control">
+                            <div class="ms-srch-sb ms-srch-sb-border form-group" id="ctl00_SmallSearchInputBox1_csr_sboxdiv">
+                                <input type="search" value="Search ..." maxlength="2048" title="Search ..." id="ctl00_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_SmallSearchInputBox1_csr').search($get('ctl00_SmallSearchInputBox1_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchInputBox1_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchInputBox1_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchInputBox1_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText" role="combobox" aria-owns="ctl00_SmallSearchInputBox1_csr_AutoCompList" aria-haspopup="true" aria-autocomplete="list" aria-expanded="false" />
+                                <a title="Search" role="button" class="ms-srch-sb-searchLink" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);})" href="javascript: {}" aria-label="Search">
+                                    <img src="/_catalogs/masterpage/NDS/media/search.svg" class="ms-srch-sb-searchImg" id="searchImg" alt="بحث" />
+                                </a>
+                                <a role="button" class="close d-none d-lg-block" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M10.3649 13.1059L10.471 12.9998L10.3649 12.8938L0.21244 2.74109L2.74136 0.212133L12.8939 10.3647L13 10.4708L13.1061 10.3647L23.2586 0.21213L25.7876 2.74109L15.6351 12.8938L15.529 12.9998L15.6351 13.1059L25.7879 23.2588L23.2588 25.7879L13.1061 15.635L13 15.5289L12.8939 15.635L2.74105 25.7879L0.212129 23.2588L10.3649 13.1059Z" fill="#72437B" stroke="white" stroke-width="0.3" />
+                                    </svg>
+                                </a>
+                                <div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer">
+                                    <div id="ctl00_SmallSearchInputBox1_csr_AutoCompList" role="listbox" aria-label="اقتراحات">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ctl00_SmallSearchInputBox1">
+                    </div>
+                    <div class="ms-clear">
+                    </div>
+                </div>
+                <!--/form-->
+            </div>
+        </div>
+    </body>
+    <script src="/_catalogs/masterpage/NDS/js/bootstrap.bundle.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="/_catalogs/masterpage/NDS/js/popper.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="/_catalogs/masterpage/NDS/js/mixitup.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="/_catalogs/masterpage/NDS/js/mixitup-multifilter.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="/_catalogs/masterpage/NDS/js/swiper-bundle.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="/_catalogs/masterpage/NDS/js/jquery-ui.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+    <script type="text/javascript" src="/_catalogs/masterpage/NDS/js/script.js">//<![CDATA[
+    
+    
+    
+    
+    
+    
+    
+    //]]>
+    </script>
+</html>

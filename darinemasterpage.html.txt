@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?><!--SPG:
+
+This HTML file has been associated with a SharePoint Master Page (.master file) carrying the same name.  While the files remain associated, you will not be allowed to edit the .master file, and any rename, move, or deletion operations will be reciprocated.
+
+To build the master page directly from this HTML file, simply edit the page as you normally would.  Use the Snippet Generator at http://srv-sp19:90/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fsrv%2Dsp19%3A90%2F%5Fcatalogs%2Fmasterpage%2FProject%2Findex%5FAr%2Emaster to create and customize useful SharePoint entities, then copy and paste them as HTML snippets into your HTML code.   All updates to this file will automatically sync to the associated Master Page.
+
+-->
+<!DOCTYPE html[]>
+<html lang="ar" dir="rtl" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta http-equiv="X-UA-Compatible" content="IE=11" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!--CS: Start Page Head Contents Snippet-->
+        <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+        <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+        <!--SID:00 -->
+        <link rel="NDS fav icon" sizes="180x180" href="/_catalogs/masterpage/Project/media/faviconv1.png" />
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--MS:<SharePoint:RobotsMetaTag runat="server">-->
+        <!--ME:</SharePoint:RobotsMetaTag>-->
+        <!--MS:<SharePoint:PageTitle runat="server">-->
+            <!--MS:<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">-->
+                <!--MS:<SharePoint:ProjectProperty Property="Title" runat="server">-->
+                <!--ME:</SharePoint:ProjectProperty>-->
+            <!--ME:</asp:ContentPlaceHolder>-->
+        <!--ME:</SharePoint:PageTitle>-->
+        <!--MS:<SharePoint:StartScript runat="server">-->
+        <!--ME:</SharePoint:StartScript>-->
+        <!--MS:<SharePoint:CssLink runat="server" Version="15">-->
+        <!--ME:</SharePoint:CssLink>-->
+        <!--MS:<SharePoint:CacheManifestLink runat="server">-->
+        <!--ME:</SharePoint:CacheManifestLink>-->
+        <!--MS:<SharePoint:PageRenderMode runat="server" RenderModeType="Standard">-->
+        <!--ME:</SharePoint:PageRenderMode>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">-->
+        <!--ME:</SharePoint:ScriptLink>-->
+        <!--MS:<SharePoint:CustomJSUrl runat="server">-->
+        <!--ME:</SharePoint:CustomJSUrl>-->
+        <!--MS:<SharePoint:SoapDiscoveryLink runat="server">-->
+        <!--ME:</SharePoint:SoapDiscoveryLink>-->
+        <!--MS:<SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">-->
+            <!--MS:<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">-->
+            <!--ME:</asp:ContentPlaceHolder>-->
+            <!--MS:<SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">-->
+            <!--ME:</SharePoint:DelegateControl>-->
+            <!--MS:<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">-->
+            <!--ME:</asp:ContentPlaceHolder>-->
+        <!--ME:</SharePoint:AjaxDelta>-->
+        <!--MS:<SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">-->
+        <!--ME:</SharePoint:CssRegistration>-->
+        <!--MS:<SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">-->
+            <!--MS:<WebPartPages:SPWebPartManager runat="server">-->
+            <!--ME:</WebPartPages:SPWebPartManager>-->
+        <!--ME:</SharePoint:AjaxDelta>-->
+        <!--CE: End Page Head Contents Snippet-->
+        <!--DC:Abraj-->
+        <link rel="stylesheet" href="/_catalogs/masterpage/Project/css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/Project/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/Project/css/mainstyles.css" />
+        <link rel="stylesheet" href="/_catalogs/masterpage/Project/css/style.css" />
+        <script src="/_catalogs/masterpage/Project/js/jquery-3.7.1.min.js"></script>        
+        <script type="text/javascript">//<![CDATA[
+        	RegisterSod("srch.resources.resx", "\u002f_layouts\u002f15\u002f1025\u002fsrch.resources.js?rev=dww\u00252Bx2efYs6Syum62UWorA\u00253D\u00253DTAG0");
+        	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <script type="text/javascript">//<![CDATA[
+			RegisterSod("search.clientcontrols.js", "\u002f_layouts\u002f15\u002fsearch.clientcontrols.js?rev=xgTuNRzK\u00252B28qr6bjGThpIw\u00253D\u00253DTAG0");
+			RegisterSodDep("search.clientcontrols.js", "sp.init.js");
+			RegisterSodDep("search.clientcontrols.js", "clientrenderer.js");
+			RegisterSodDep("search.clientcontrols.js", "srch.resources.resx");
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <script type="text/javascript">//<![CDATA[
+			RegisterSod("sp.search.js", "\u002f_layouts\u002f15\u002fsp.search.js?rev=eMyDf7ZGV6rTjB2sDSdovA\u00253D\u00253DTAG0");
+			RegisterSodDep("sp.search.js", "sp.init.js");
+			RegisterSodDep("sp.search.js", "sp.runtime.js");
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <script type="text/javascript">//<![CDATA[
+			RegisterSod("ajaxtoolkit.js", "\u002f_layouts\u002f15\u002fajaxtoolkit.js?rev=I3jVxnVkBqeUZ\u00252FWA\u00252BgwTLg\u00253D\u00253DTAG0");
+			RegisterSodDep("ajaxtoolkit.js", "search.clientcontrols.js");
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+        <!--[if gte mso 9]><xml>
+      <mso:CustomDocumentProperties>
+      <mso:ContentTypeId msdt:dt="string">0x0101000F1C8B9E0EB4BE489F09807B2C53288F0054AD6EF48B9F7B45A142F8173F171BD10003D357F861E29844953D5CAA1D4D8A3A0008F098E9396FA1478A141755E5497E19</mso:ContentTypeId>
+      <mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+      <mso:HtmlDesignFromMaster msdt:dt="string"></mso:HtmlDesignFromMaster>
+      <mso:HtmlDesignStatusAndPreview msdt:dt="string">http://srv-sp19:90/_catalogs/masterpage/Project/index_Ar.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+      
+  <mso:FSObjType msdt:dt="string">0</mso:FSObjType>
+  <mso:FileDirRef msdt:dt="string">_catalogs/masterpage/Abraj</mso:FileDirRef>
+  <mso:ContentType msdt:dt="string">Html Master Page</mso:ContentType>
+  <mso:FileLeafRef msdt:dt="string">index.html</mso:FileLeafRef>
+  <mso:UIVersion msdt:dt="string">15</mso:UIVersion>
+  
+
+
+
+
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+</mso:CustomDocumentProperties>
+      </xml><![endif]-->
+        <script>//<![CDATA[
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-161594602-1');
+
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]>
+        </script>
+    </head>
+    <body>
+        <!--CS: Start Ribbon Snippet-->
+        <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+        <!--SPM:<%@Register Tagprefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>-->
+        <!--MS:<SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">-->
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <!--MS:<SharePoint:EncodedLiteral runat="server" text="&#60;%$Resources:wss,master_turnonaccessibility%&#62;" EncodeMethod="HtmlEncode">-->
+                    <!--ME:</SharePoint:EncodedLiteral>-->
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <!--MS:<SharePoint:EncodedLiteral runat="server" text="&#60;%$Resources:wss,master_turnoffaccessibility%&#62;" EncodeMethod="HtmlEncode">-->
+                    <!--ME:</SharePoint:EncodedLiteral>-->
+                </a>
+            </div>
+        <!--ME:</SharePoint:SPSecurityTrimmedControl>-->
+        <div id="ms-designer-ribbon" class="collapse">
+            <!--SID:02 {Ribbon}-->
+            <!--PS: Start of READ-ONLY PREVIEW (do not modify) --><div class="DefaultContentBlock" style="background:rgb(0, 114, 198); color:white; width:100%; padding:8px; height:64px; overflow:hidden;">The SharePoint ribbon will be here when your file is either previewed on or applied to your site.</div><!--PE: End of READ-ONLY PREVIEW -->
+        </div>
+        <!--MS:<SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">-->
+            <!--MS:<wssucw:Welcome runat="server" EnableViewState="false">-->
+            <!--ME:</wssucw:Welcome>-->
+        <!--ME:</SharePoint:SPSecurityTrimmedControl>-->
+        <!--CE: End Ribbon Snippet-->
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+                <!-- Start Navbar -->
+                <!-- navbar-fixed-top -->
+                <div class="body scroll-container" id="scroll-container">
+                    <header id="header" class="header-flex header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 0, 'stickySetTop': '0'}">
+                        <!-- top nav -->
+                        <div class="header-body">
+                            <div class="header-container header-border hidden">
+                                <nav class="navbar navbar-expand-sm container">
+                                    <div class="d-lg-flex align-items-lg-center w-100">
+                                        <div class="nav-logo">
+                                            <a href="/ar-om/">
+                                                <img id="logo" class="strong-logo" src="/_catalogs/masterpage/Project/assets/ng-ds-logo.svg" />
+                                            </a>
+                                        </div>
+                                        <div class="header-container header-menu ">
+                                            <div class="header-row">
+                                                <div class="header-column">
+                                                    <div class="header-row">
+                                                        <div class="header-nav header-nav-top-line">
+                                                            <div class="btn header-btn-collapse-nav header-menu-btn">
+                                                                <span class="icon-bar">
+                                                                </span>
+                                                                <span class="icon-bar">
+                                                                </span>
+                                                                <span class="icon-bar">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="header-nav-main">
+                                                            <nav>
+                                                                <ul class="nav nav-pills" id="mainNav">
+                                                                    <!-- DN Menu Branding -->
+                                                                    <div class="menuSection">
+                                                                        <!-- menu oob start -->
+                                                                        <!--CS: Start Top Navigation Snippet-->
+                                                                        <!--SPM:<SharePoint:AjaxDelta id="DeltaTopNavigation" BlockElement="true" CssClass="ms-displayInline" runat="server">-->
+                                                                        <!--SPM:<SharePoint:DelegateControl runat="server" ControlId="TopNavigationDataSource" Id="topNavigationDelegate">-->
+                                                                        <!--SPM:<Template_Controls>-->
+                                                                        <!--SPM:<asp:SiteMapDataSource 
+                                                      ShowStartingNode="False"
+                                                      SiteMapProvider="SPNavigationProvider" 
+                                                      id="topSiteMap" 
+                                                      runat="server"
+                                                      StartingNodeUrl="sid:1002"/>-->
+                                                                        <!--SPM:</Template_Controls>-->
+                                                                        <!--SPM:</SharePoint:DelegateControl>-->
+                                                                        <a name="startNavigation">
+                                                                        </a>
+                                                                        <!--SPM:<asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server">-->
+                                                                        <!--SPM:<SharePoint:AspMenu 
+                                                  ID="TopNavigationMenu" 
+                                                  Runat="server" 
+                                                  EnableViewState="false"
+                                                  DataSourceID="topSiteMap"
+                                                  AccessKey="&#60;%$Resources:wss,navigation_accesskey%&#62;"
+                                                  UseSimpleRendering="true"
+                                                  UseSeparateCss="false"
+                                                  Orientation="Horizontal"
+                                                  StaticDisplayLevels="2"
+                                                  AdjustForShowStartingNode="true"
+                                                  MaximumDynamicDisplayLevels="2"
+                                                  SkipLinkText=""/>-->
+                                                                        <!--PS: Start of READ-ONLY PREVIEW (do not modify)--><link rel="stylesheet" href="http://win12/_layouts/15/1033/styles/menu-21.css" /><div id="zz7_TopNavigationMenu" class=" noindex ms-core-listMenu-horizontalBox"><ul id="zz9_RootAspMenu" class="root ms-core-listMenu-root static"><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" title="Default Publishing Site" href="#" accesskey="1"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Default Publishing Site</span></span></a></li></ul></div><!--PE: End of READ-ONLY PREVIEW-->
+                                                                        <!--SPM:</asp:ContentPlaceHolder>-->
+                                                                        <!--SPM:</SharePoint:AjaxDelta>-->
+                                                                        <!--CE: End Top Navigation Snippet-->
+                                                                        <!-- menu oob end -->
+                                                                        <!-- Language Dropdown -->
+                                                                        
+                                                                    </div>
+                                                                    <!-- end DN Menu Branding -->
+                                                                </ul>
+                                                            </nav>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="header-search">
+						                <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/Path 3.svg" alt="" class="img-fluid">
+						            </button>
+						            
+	                                 <button class="header-language-container">
+					                <span>English</span>
+					                <div class="header-caret">
+					                    <img src="/_catalogs/masterpage/Project/assets/Path 7.svg" alt="">
+					                    <img src="/_catalogs/masterpage/Project/assets/asc.svg" alt="">
+					                </div>
+					            </button>
+						        
+						       <button class="hamburger-container">
+						            
+						        </button>                                        
+                                <div class="up d-none d-lg-flex align-items-center justify-content-center mr-2">
+                                    <button type="button" id="close-ribbon" class="btn-close-ribbon hidden collapsed" data-toggle="collapse" data-target="#ms-designer-ribbon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- End Navbar -->
+                    <div class="main-content-body">
+                        <div data-name="ContentPlaceHolderMain" id="ContentPlaceHolderMain">
+                            <!--CS: Start PlaceHolderMain Snippet-->
+                            <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                            <!--MS:<SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">-->
+                                <!--MS:<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">-->
+                                    <div class="DefaultContentBlock" style="border:medium black solid; background:yellow; color:black; margin:20px; padding:10px;">
+                          This div, which you should delete, represents the content area that your Page Layouts and pages will fill. Design your Master Page around this content placeholder.
+            
+                                
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    </div>
+                                <!--ME:</asp:ContentPlaceHolder>-->
+                            <!--ME:</SharePoint:AjaxDelta>-->
+                            <!--CE: End PlaceHolderMain Snippet-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SEARCH POPUP -->
+        <div class="overlay-shadow">
+        </div>
+        <!-- SEARCH POPUP -->
+        <div id="search" class="hidden">
+            <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+                <div webpartid="00000000-0000-0000-0000-000000000000" haspers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " onlyformepart="true" allowdelete="false" style="">
+                    <div componentid="ctl00_SmallSearchInputBox1_csr" id="ctl00_SmallSearchInputBox1_csr" class="d-flex align-items-center">
+                        <div id="SearchBox" name="Control">
+                            <div class="ms-srch-sb ms-srch-sb-border form-group" id="ctl00_SmallSearchInputBox1_csr_sboxdiv">
+                                <input type="search" value="بحث ..." maxlength="2048" title="Search ..." id="ctl00_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_SmallSearchInputBox1_csr').search($get('ctl00_SmallSearchInputBox1_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchInputBox1_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchInputBox1_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_SmallSearchInputBox1_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText" role="combobox" aria-owns="ctl00_SmallSearchInputBox1_csr_AutoCompList" aria-haspopup="true" aria-autocomplete="list" aria-expanded="false" />
+                                <a title="Search" role="button" class="ms-srch-sb-searchLink" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);})" href="javascript: {}" aria-label="Search">
+                                    <!--img src="/_catalogs/masterpage/NDS/media/search.svg" class="ms-srch-sb-searchImg" id="searchImg" alt="بحث" /-->
+                                </a>
+                                <a role="button" class="close d-none d-lg-block" aria-label="Close">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                        <path d="M10.3649 13.1059L10.471 12.9998L10.3649 12.8938L0.21244 2.74109L2.74136 0.212133L12.8939 10.3647L13 10.4708L13.1061 10.3647L23.2586 0.21213L25.7876 2.74109L15.6351 12.8938L15.529 12.9998L15.6351 13.1059L25.7879 23.2588L23.2588 25.7879L13.1061 15.635L13 15.5289L12.8939 15.635L2.74105 25.7879L0.212129 23.2588L10.3649 13.1059Z" fill="#72437B" stroke="white" stroke-width="0.3" />
+                                    </svg>
+                                </a>
+                                <div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer">
+                                    <div id="ctl00_SmallSearchInputBox1_csr_AutoCompList" role="listbox" aria-label="اقتراحات">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ctl00_SmallSearchInputBox1">
+                    </div>
+                    <div class="ms-clear">
+                    </div>
+                </div>
+                <!--/form-->
+            </div>
+        </div>
+        <footer class="footer-container">
+				        <div class="footer-items-container econtainer">
+				            <div class="footer-mobile-logo-container">
+				                <img src="/_catalogs/masterpage/Project/assets/ng-ds-logo.svg" alt="">
+				            </div>
+				            <div class="footer-links-container footer-social-links-container">
+				                <div class="footer-logo-container">
+				                    <img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/ng-ds-logo.svg" alt="">
+				                </div>
+				                <div class="footer-social-media-container">
+				                    <a href="" aria-label="check our twitter page" role="link" class="social-media-icon fb"><img
+				                            src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/facebook-svgrepo-com.svg" alt=""></a>
+				                    <a href="" aria-label="check our linkedin page" role="link" class="social-media-icon linkedin"><img
+				                            src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/x-social-media-black-icon.svg" alt=""></a>
+				                    <a href="" aria-label="check our snapchat page" role="link" class="social-media-icon snapchat"><img
+				                            src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/instagram-svgrepo-com.svg" alt=""></a>
+				                    <a href="" aria-label="check our instagram page" role="link"
+				                        class="social-media-icon instagram"><img src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/7935ec95c421cee6d86eb22ecd1368a9.svg"
+				                            alt=""></a>
+				                    <a href="" aria-label="check our facebook page" role="link" class="social-media-icon facebook"><img
+				                            src="http://srv-sp19:90/_catalogs/masterpage/Project/assets/7935ec95c421cee6d86eb22ecd125aef.svg" alt=""></a>
+				                </div>
+				            </div>
+				            <div class="footer-links-container">
+				                <div class="footer-link-container-title collapsed" data-bs-toggle="collapse"
+				                    data-bs-target="#collapseOne">About us</div>
+				                <div id="collapseOne" class="footer-overflow-container accordion-collapse collapse "
+				                    style="padding:  0;">
+				                    <ul class="footer-links">
+				                        <li><a href="" class="footer-link">Our Story</a></li>
+				                        <li><a href="" class="footer-link">Board Members</a></li>
+				                        <li><a href="" class="footer-link">Leadership Team</a></li>
+				                        <li><a href="" class="footer-link">Capability Report</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				
+				            <div class="footer-links-container">
+				                <div class="footer-link-container-title  collapsed" data-bs-toggle="collapse"
+				                    data-bs-target="#collapsetwo">Services</div>
+				                <div id="collapsetwo" class="footer-overflow-container accordion-collapse collapse ">
+				
+				                    <ul class="footer-links">
+				                        <li><a href="" class="footer-link">Water Services</a></li>
+				                        <li><a href="" class="footer-link">Electricity Services</a></li>
+				                        <li><a href="" class="footer-link">Wastewater Services</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				
+				            <div class="footer-links-container">
+				                <div class="footer-link-container-title collapsed " data-bs-toggle="collapse"
+				                    data-bs-target="#collapsethree">Quick Links</div>
+				                <div id="collapsethree" class="footer-overflow-container accordion-collapse collapse ">
+				                    <ul class="footer-links">
+				                        <li><a href="" class="footer-link">Thabit</a></li>
+				                        <li><a href="" class="footer-link">Whistleblower</a></li>
+				                        <li><a href="" class="footer-link">CRT</a></li>
+				
+				                        <li><a href="" class="footer-link">Capability Report</a></li>
+				                    </ul>
+				                </div>
+				            </div>
+				
+				            <div class="footer-links-container">
+				                <div class="footer-link-container-title collapsed " data-bs-toggle="collapse"
+				                    data-bs-target="#collapsefour">Other</div>
+				                <div id="collapsefour" class="footer-overflow-container accordion-collapse collapse ">
+				                    <ul class="footer-links">
+				                        <li><a href="" class="footer-link">Tenders</a></li>
+				                        <li><a href="" class="footer-link">Vacancies</a></li>
+				                        <li><a href="" class="footer-link">Media Center</a></li>
+				                    </ul>
+				                </div>
+				
+				            </div>
+				
+				        </div>
+				        <div class="footer-lower-container econtainer">
+				            <div class="footer-lower-links-container">
+				                <a href="" class="footer-lower-link">Privacy Policy</a>
+				                <div class="violet-circle"></div>
+				                <a href="" class="footer-lower-link">Terms & Conditions</a>
+				                <div class="violet-circle"></div>
+				                <a href="" class="footer-lower-link">Sitemap</a>
+				            </div>
+				
+				            <div class="footer-copyrights-container">
+				                © 2024 Nama Dhofar. All Rights Reserved
+				            </div>
+				        </div>
+				    </footer>
+        
+		<script src="/_catalogs/masterpage/Project/js/popper.min.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/bootstrap.min.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/swiper-bundle.min.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/gsap.min.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/ScrollTrigger.min.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/masonry.pkgd.min.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/script.js"></script>
+		<script src="/_catalogs/masterpage/Project/js/scripts.js"></script>
+		
+    </body>
+</html>
