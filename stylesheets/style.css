@@ -3184,7 +3184,7 @@ font-size:1rem;
 
 .faq-card-item-question-text{
     font-family: avenirmedium;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .faq-card-item-button{
@@ -3259,8 +3259,8 @@ font-size:1rem;
 .news-details-title{
     font-family: avenirdemi;
     font-size: 1.8rem;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-top: .5rem;
 }
 
 .news-details-paragraph{
@@ -3268,7 +3268,7 @@ font-size:1rem;
 }
 
 .news-details-paragraph p{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .survey-section{
@@ -3383,7 +3383,7 @@ font-size:1rem;
     transition: var(--animation);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(20%);
+ 
 }
 .survey-modal.active{
     transform: translate(0);
@@ -3391,10 +3391,10 @@ font-size:1rem;
     opacity: 1;
 }
 .survey-modal-container{
-    width: 60%;
+    width:90%;
     background-color: 
     white;
-    height: 75%;
+    height: 80%;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -3422,8 +3422,8 @@ font-size:1rem;
 .survey-modal-image-container{
     background-color: #F7F5F8;
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3434,16 +3434,16 @@ font-size:1rem;
     font-family: avenirdemi;
 }
 .survey-modal-thanks{
-    font-size: 1.45rem;
-    width: 60%;
+    font-size: 1.25rem;
+    width: 90%;
     color: #272727;
     font-family: avenirmedium;
     line-height: 2;
 }
 
 .calculator-banner{
-    background-color: #FAFAFA;
-    padding: 5rem 22rem;
+    background-color: #F5F6F8;
+    padding: 2rem 1rem;
     text-align: center;
     line-height: 2;
     color: #464646;
@@ -3458,19 +3458,21 @@ font-size:1rem;
 
 .bill-calculator-form {
     background: white;
-    padding: 2rem 6rem;
+    padding: 0;
     border-radius: 0.5rem;
 }
 
 .bill-calculator-row {
-    display: flex;
-    gap: 3rem;
+    display: grid;
+    gap: 0rem;
+    flex-wrap: wrap;
 
 }
 
 .bill-calculator-field {
     flex: 1;
     margin-bottom: 1.2rem;
+    position: relative;
 }
 
 .bill-calculator-field label {
@@ -3478,10 +3480,12 @@ font-size:1rem;
     margin-bottom: 0.5rem;
     color: #333;
     font-family: avenirdemi;
+    white-space: nowrap;
 }
 
 .bill-calculator-field input,
-.bill-calculator-field select {
+.bill-calculator-field select
+{
     width: 100%;
     padding: 0.625rem;
     border: 0.0625rem solid #ddd;
@@ -3489,11 +3493,33 @@ font-size:1rem;
     font-size: 0.875rem;
 }
 
+.bill-calculator-last-date,
+.bill-calculator-current-date,
+.bill-calculator-category {
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    -moz-appearance: textfield; /* Remove default styling in Firefox */
+    appearance: none; /* Remove default styling in all browsers */
+}
+
 body .bill-calculator-category{
-    width: calc(50% - 1.5rem);
+    
     position: relative;
 }
 
+.bill-custom-calendar,
+.bill-custom-caret{
+    position: absolute;
+    bottom: .6rem;
+    right: .7rem;
+    background-color: white;
+    pointer-events: none;
+
+}
+
+.bill-custom-calendar img,
+.bill-custom-caret img{
+width: 1.3rem;
+}
 
 body .bill-calculator-category option{
     width: 50%;
@@ -3503,21 +3529,31 @@ body .bill-calculator-category option{
     background:var(--violet-color);
     color: white;
     border: none;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 0.25rem;
     cursor: pointer;
     font-size: 1rem;
     margin-left: 50%;
-    margin-top: 1rem;
+    margin-top: 2rem;
     transition: background 0.3s;
     transform: translateX(-50%);
     border-radius: 2rem;
+    
 }
 
 .bill-calculator-submit:hover {
     background: #552288;
 }
 
+div#rcaptcha{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+div#captcha{
+    display: flex;
+    justify-content: center;
+}
 /* Modal Styles */
 .bill-calculator-modal {
     
@@ -3547,46 +3583,184 @@ body .bill-calculator-category option{
     position: relative;
     background: white;
     width: 90%;
-    max-width: 25rem;
+
    
-    padding: 1.25rem;
+    padding: 5rem 2rem;
+    padding-bottom: 2rem;
     border-radius: 0.5rem;
     text-align: center;
 }
 
+.bill-calculator-result-title {
+font-family: avenirdemi;
+padding-bottom: 2.5rem;
+}
+
 .bill-calculator-modal-close {
     position: absolute;
-    right: 1.25rem;
-    top: 0.625rem;
-    font-size: 1.5rem;
+    right: 1.8rem;
+    top: 0rem;
+    font-size: 3.5rem;
     cursor: pointer;
     color: #666;
 }
 
 .bill-calculator-result {
     margin: 1.25rem 0;
+    border-radius: .5rem;
+    overflow: hidden;
 }
 
 .bill-calculator-result-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.625rem 0;
-    border-bottom: 0.0625rem solid #eee;
+    display: flex
+    ;
+        justify-content: space-between;
+        padding: 0.625rem 1rem;
+        border: 0.0625rem solid #eee;
+        background: #FAFAFA;
 }
 
 .bill-calculator-modal-done {
-    background: #663399;
+    background: var(--violet-color);
     color: white;
     border: none;
-    padding: 0.625rem 1.25rem;
-    border-radius: 0.25rem;
+    padding: 1rem 4.5rem;
+    border-radius: 2rem;
     cursor: pointer;
-    margin-top: 1.25rem;
+    margin-top: 2rem;
 }
 
 .bill-calculator-modal-done:hover {
     background: #552288;
 }
+
+span.total-modal-text {
+    font-family: avenirdemi;
+    font-size: 1.1rem;
+}
+
+
+.report-page-container {
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+
+.report-page-section {
+    margin-bottom: 4rem;
+}
+
+.report-page-section-title{
+    font-family: avenirdemi;
+}
+
+.report-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.report-page-header-line{
+    height: 1px;
+    background-color: #F5F5F5;
+    width: 100%;
+    margin: 0 1rem;
+}
+
+.report-page-header h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.report-page-count {
+    flex-shrink: 0;
+    color: var(--report-page-gray);
+    font-size: 0.975rem;
+    font-family: avenirmedium;
+}
+
+.report-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.report-page-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 0.0625rem solid var(--report-page-border);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: white;
+    border: 1px solid #DDDEDF; 
+    overflow: hidden;
+}
+
+.report-page-item-image-container{
+    position: relative;
+    background-color: #F5F6F8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.5rem;
+}
+
+.report-page-item-image-container img{
+    height: 8rem;
+    width:6rem;
+}
+
+.report-page-item-download-button{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCFCFC;
+    border: 1px solid #DBDBDC;
+    padding: .5rem;
+    border-radius: .4rem;
+    transition: var(--animation);
+}
+
+.report-page-item-download-button img{
+    width: 1rem;
+    height: auto;
+
+}
+.report-page-item-download-button:hover {
+    background-color: white;
+    transform: translateY(0.125rem);
+}
+
+.report-page-item-data-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+    gap: .3rem;
+}
+
+.report-page-filename {
+    font-size: 1rem;
+    font-family: avenirdemi;
+    margin-bottom: 0.25rem;
+}
+
+.report-page-filesize {
+    font-size: 0.9rem;
+    font-family: avenirmedium;
+    color: #595959;
+   
+}
+
 @media (min-width: 768px) {
     .sitelinks-section {
         grid-template-columns: repeat(3, 1fr);
@@ -4848,7 +5022,10 @@ body .econtainer  .main-title {
         padding-right: 17rem;
   
     }
-
+    .faq-card-item-question-text{
+        font-family: avenirmedium;
+        font-size: 1.2rem;
+    }
     .faq-card-item-question{
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
@@ -4901,6 +5078,51 @@ body .econtainer  .main-title {
 
     .survey-card{
         padding: 2.5rem 4rem;
+    }
+
+    .survey-modal-container{
+        width: 60%;
+        height: 90%;
+    }
+
+    .survey-modal-image-container{
+        width: 20rem;
+        height: 20rem;
+    }
+    .survey-modal-thanks{
+        width: 60%;
+        font-size: 1.45rem;
+    }
+    .calculator-banner{
+        padding: 5rem 22rem;
+    }
+    .bill-calculator-form{
+        padding:  2rem 6rem;
+    }
+    .bill-calculator-row{
+        gap: 3rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    body .bill-calculator-category
+    {
+        width: calc(50% - 1.5rem);
+    }
+    .bill-calculator-submit{
+        padding: 1rem 2.5rem;
+    }
+    .bill-calculator-modal-content{
+        width: 40%;
+        padding: 6rem 5rem;
+    }
+    .report-page-container {
+        padding: 3rem;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        
+    }
+   
+    .report-page-header-line{
+        margin: 0 2rem;
     }
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
