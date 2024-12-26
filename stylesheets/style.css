@@ -3449,33 +3449,38 @@ font-size:1rem;
     color: #464646;
 
 }
-.bill-calculator-container {
+
+.data-input-container {
    
     
     padding: 1.25rem;
     font-family: Arial, sans-serif;
 }
 
-.bill-calculator-form {
+.data-input-form {
     background: white;
     padding: 0;
     border-radius: 0.5rem;
 }
 
-.bill-calculator-row {
+.data-input-row {
     display: grid;
     gap: 0rem;
     flex-wrap: wrap;
 
 }
 
-.bill-calculator-field {
+ .data-input-field {
     flex: 1;
     margin-bottom: 1.2rem;
     position: relative;
 }
 
-.bill-calculator-field label {
+.colored-asterk{
+    color: var(--violet-color);
+}
+
+ .data-input-field label {
     display: block;
     margin-bottom: 0.5rem;
     color: #333;
@@ -3483,8 +3488,8 @@ font-size:1rem;
     white-space: nowrap;
 }
 
-.bill-calculator-field input,
-.bill-calculator-field select
+ .data-input-field input,
+ .data-input-field select
 {
     width: 100%;
     padding: 0.625rem;
@@ -3493,21 +3498,21 @@ font-size:1rem;
     font-size: 0.875rem;
 }
 
-.bill-calculator-last-date,
-.bill-calculator-current-date,
-.bill-calculator-category {
+ .data-input-last-date,
+ .data-input-current-date,
+ .data-input-category {
     -webkit-appearance: none; /* Remove default styling in WebKit browsers */
     -moz-appearance: textfield; /* Remove default styling in Firefox */
     appearance: none; /* Remove default styling in all browsers */
 }
 
-body .bill-calculator-category{
+body  .data-input-category{
     
     position: relative;
 }
 
-.bill-custom-calendar,
-.bill-custom-caret{
+.data-input-custom-calendar,
+.data-input-custom-caret{
     position: absolute;
     bottom: .6rem;
     right: .7rem;
@@ -3516,16 +3521,14 @@ body .bill-calculator-category{
 
 }
 
-.bill-custom-calendar img,
-.bill-custom-caret img{
+.data-input-custom-calendar img,
+.data-input-custom-caret img{
 width: 1.3rem;
 }
 
-body .bill-calculator-category option{
-    width: 50%;
-}
 
-.bill-calculator-submit {
+
+ .data-input-submit {
     background:var(--violet-color);
     color: white;
     border: none;
@@ -3541,8 +3544,186 @@ body .bill-calculator-category option{
     
 }
 
-.bill-calculator-submit:hover {
+ .data-input-submit:hover {
     background: #552288;
+}
+
+
+.data-input-details-container{
+    margin-top: 1rem;
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.data-input-details-title-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F5F6F8;
+        padding: 1.5rem 2.5rem;
+}
+
+.data-input-details-title-text{
+    color: black;
+    font-family: avenirdemi;
+    font-size: 1.2rem;
+}
+
+.data-input-details-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.125rem solid var(--violet-color);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.data-input-details-button img{
+    width: 1rem;
+}
+
+.data-input-details-button img.minus{
+    display: none;
+}
+
+.data-input-details-title-container.collapsed .data-input-details-button img.minus{
+    display: block;
+}
+.data-input-details-title-container.collapsed .data-input-details-button img.plus{
+    display: none;
+}
+
+.data-input-details-container-inner{
+    padding: 1rem;
+}
+
+.data-input-checkbox-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+
+.data-input-checkbox-group-title{
+
+    font-family: avenirdemi;
+}
+
+.data-input-checkbox-group-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 3rem;
+}
+
+.data-input-checkbox-group-item {
+    display: none; /* Hide the default checkbox */
+}
+.data-input-checkbox-group-item-label {
+    position: relative;
+    padding-left: 2.5rem;
+    margin: 5px 0;
+    cursor: pointer;
+    font-family: avenirmedium;
+}
+.data-input-checkbox-group-item-label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(63, 33, 63);; /* Border color */
+    background-color: white; /* Background color */
+    border-radius: 4px; /* Rounded corners */
+    background: url('../assets/check-svgrepo-com.svg');
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.data-input-checkbox-group-item:checked + label::before {
+    background-color: var(--violet-color); /* Checked background color */
+    border-color: rgb(63, 33, 63); /* Checked border color */
+}
+.data-input-checkbox-group-item:checked + label::after {
+    content: ''; /* Checkmark symbol */
+    position: absolute;
+   
+    left: 5px;
+    top: 0;
+    color: white; /* Checkmark color */
+    font-size: 18px;
+}
+
+.data-input-text-area{
+    border: 0.0625rem solid #ddd;
+    padding: 0.625rem;
+    height: 10rem;
+    width: 100%;
+}
+.data-input-text-area-container{
+    margin-top: 1.5rem;
+}
+::-webkit-file-upload-button {
+    display: none;
+ }
+ ::file-selector-button {
+    display: none;
+  } 
+
+.data-input-field .data-input-upload-area{
+    display: inline-block;
+  width: 100%;
+  padding: 15rem 0 0 0;
+  height: 15rem;
+  overflow: hidden;
+  border: none;
+  border-style: dashed;
+  border-color: #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+   
+}
+
+.data-input-upload-container-cloud{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    gap: .7rem;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.data-input-upload-container-cloud-image img{
+    width: 5rem;
+}
+
+.data-input-upload-container-cloud-image{
+    display: flex;
+}
+
+.data-input-upload-container-cloud-text .highlight{
+    color: var(--violet-color);
+    position: relative;
+}
+
+.data-input-upload-container-cloud-text .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px; /* Thickness of the underline */
+    width: 103%;
+    background: var(--violet-color); /* Color of the underline */
+    z-index: -1; /* Place behind the text */
 }
 
 div#rcaptcha{
@@ -3555,7 +3736,7 @@ div#captcha{
     justify-content: center;
 }
 /* Modal Styles */
-.bill-calculator-modal {
+ .data-input-modal {
     
     position: fixed;
     top: 0;
@@ -3573,13 +3754,13 @@ div#captcha{
     backdrop-filter: blur(0.625rem);
    
 }
-.bill-calculator-modal.active{
+ .data-input-modal.active{
     opacity: 1;
     pointer-events: all;
     transform: translate(0);
 
 }
-.bill-calculator-modal-content {
+ .data-input-modal-content {
     position: relative;
     background: white;
     width: 90%;
@@ -3591,12 +3772,12 @@ div#captcha{
     text-align: center;
 }
 
-.bill-calculator-result-title {
+ .data-input-result-title {
 font-family: avenirdemi;
 padding-bottom: 2.5rem;
 }
 
-.bill-calculator-modal-close {
+ .data-input-modal-close {
     position: absolute;
     right: 1.8rem;
     top: 0rem;
@@ -3605,13 +3786,13 @@ padding-bottom: 2.5rem;
     color: #666;
 }
 
-.bill-calculator-result {
+ .data-input-result {
     margin: 1.25rem 0;
     border-radius: .5rem;
     overflow: hidden;
 }
 
-.bill-calculator-result-row {
+ .data-input-result-row {
     display: flex
     ;
         justify-content: space-between;
@@ -3620,7 +3801,7 @@ padding-bottom: 2.5rem;
         background: #FAFAFA;
 }
 
-.bill-calculator-modal-done {
+ .data-input-modal-done {
     background: var(--violet-color);
     color: white;
     border: none;
@@ -3630,7 +3811,7 @@ padding-bottom: 2.5rem;
     margin-top: 2rem;
 }
 
-.bill-calculator-modal-done:hover {
+ .data-input-modal-done:hover {
     background: #552288;
 }
 
@@ -3759,6 +3940,28 @@ span.total-modal-text {
     font-family: avenirmedium;
     color: #595959;
    
+}
+
+.subform-full-row{
+    width: 100%;
+    display: flex;
+  
+    
+    flex-direction: column;
+   
+}
+
+.subform-label{
+        margin-bottom: 0.5rem;
+    color: #333;
+    font-family: avenirdemi;
+    white-space: nowrap;
+}
+
+.subform-full-textarea{
+    border: 0.0625rem solid #ddd;
+    padding: 0.625rem;
+ height: 10rem;    
 }
 
 @media (min-width: 768px) {
@@ -5096,21 +5299,24 @@ body .econtainer  .main-title {
     .calculator-banner{
         padding: 5rem 22rem;
     }
-    .bill-calculator-form{
+    .data-input-form{
         padding:  2rem 6rem;
     }
-    .bill-calculator-row{
+    .data-input-row{
         gap: 3rem;
         grid-template-columns: 1fr 1fr;
     }
-    body .bill-calculator-category
+    body  .data-input-full-field
     {
         width: calc(50% - 1.5rem);
     }
-    .bill-calculator-submit{
+    .data-input-submit{
         padding: 1rem 2.5rem;
     }
-    .bill-calculator-modal-content{
+     .data-input-submit{
+        padding: 1rem 2.5rem;
+    }
+     .data-input-modal-content{
         width: 40%;
         padding: 6rem 5rem;
     }
