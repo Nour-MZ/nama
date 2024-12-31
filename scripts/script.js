@@ -1,6 +1,71 @@
 
 $(document).ready(function () {
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
+  function validateFields() {
+    const requiredFields = [
+        { id: 'accountType', name: 'Account Type' },
+        { id: 'type', name: 'Type' },
+        { id: 'customerType', name: 'Customer Type' },
+        { id: 'name', name: 'Name' },
+        { id: 'idCard', name: 'ID Card' },
+        { id: 'mobile', name: 'Mobile' },
+        { id: 'email', name: 'Email' },
+        { id: 'telephone', name: 'Telephone' },
+        { id: 'wasteService', name: 'Waste Service' },
+        { id: 'nationality', name: 'Nationality' },
+        { id: 'wilayat', name: 'Wilayat' },
+        { id: 'area', name: 'Area' },
+        { id: 'wayNo', name: 'Way No' },
+        { id: 'buildingNo', name: 'Building No' },
+        { id: 'flatNo', name: 'Flat No' },
+        { id: 'poBox', name: 'PO Box' },
+        { id: 'pc', name: 'PC' },
+        { id: 'remarks', name: 'Remarks' },
+        { id: 'documentContent', name: 'Meter Reading Photo' }
+    ];
+
+    let isValid = true;
+    const errorMessages = [];
+
+   requiredFields.forEach(field => {
+    const element = $('#' + field.id); // Use jQuery to select the element
+    if (!element.val()) {
+        isValid = false;
+        element.addClass('active');
+        
+
+        element.siblings('.error-icon').addClass('active'); 
+    } else {
+        element.removeClass('active');
+
+        element.siblings('.error-icon').removeClass('active'); 
+    }
+});
+
+    const captchaError = document.getElementById('captcha');
+    if (!grecaptcha.getResponse()) {
+        isValid = false;
+        captchaError.innerText = "Please complete the CAPTCHA.";
+    } else {
+        captchaError.innerText = "";
+    }
+
+    return { isValid, errorMessages };
+}
+
+document.getElementById('submitButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default button behavior
+
+    const { isValid, errorMessages } = validateFields();
+    if (!isValid) {
+        return
+    } else {
+        $("#updategeneralmodal").addClass('active')
+    }
+});
 
   //yeader
 

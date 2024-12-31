@@ -8,13 +8,6 @@ $('.bill-calculator-submit').click(function() {
         return;
     }
 
-    const consumption = currentReading - lastReading;
-
-    const rate = 0.12;
-    const totalBill = consumption * rate;
-
-    $('.bill-calculator-consumption').text(consumption.toFixed(2) + ' kWh');
-    $('.bill-calculator-total').text('$' + totalBill.toFixed(2));
 
     $('.bill-calculator-modal').addClass('active');;
 });

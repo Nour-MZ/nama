@@ -43,10 +43,10 @@
     <div class="data-input-section">
         
         <div class="data-input-container">
-            <div class="data-input-form">
+            <form class="data-input-form">
                 <div class="data-input-field data-input-full-field">
                     <label>Category *</label>
-                    <select class="data-input-category" required>
+                    <select class="data-input-category bill-calculator-category" required>
                         <option value="">Select a Category</option>
                         <option value="residential">Residential</option>
                         <option value="commercial">Commercial</option>
@@ -77,23 +77,23 @@
                 <div class="data-input-row">
                     <div class="data-input-field">
                         <label>Last Meter Reading *</label>
-                        <input type="number" class="data-input-last-reading" placeholder="Enter Last Meter Reading" required>
+                        <input type="number" class="data-input-last-reading bill-calculator-last-reading" placeholder="Enter Last Meter Reading" required>
                     </div>
                     <div class="data-input-field">
                         <label>Current Meter Reading *</label>
-                        <input type="number" class="data-input-current-reading" placeholder="Enter Current Meter Reading" required>
+                        <input type="number" class="data-input-current-reading bill-calculator-current-reading" placeholder="Enter Current Meter Reading" required>
                     </div>
                 </div>
                 <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6LdyMKYqAAAAAIiDEYI3G796zw1hmdfNmFtnzgkL"></div>
                 <div id="captcha" style="color:red"></div> <!-- this will show captcha errors -->
-                <button class="data-input-submit">Calculate Bill</button>
-            </div>
+                <input type="submit" value="Submit" class="data-input-submit bill-calculator-submit">Calculate Bill</input>
+            </form>
         </div>
     
         <!-- Modal -->
-        <div class="data-input-modal">
+        <div class="data-input-modal bill-calculator-modal">
             <div class="data-input-modal-content">
-                <span class="data-input-modal-close">&times;</span>
+                <span class="data-input-modal-close bill-calculator-modal-close">&times;</span>
                 <h2 class="data-input-result-title">Calculation Result</h2>
                 <div class="data-input-result">
                     <div class="data-input-result-row">
@@ -105,7 +105,7 @@
                         <span class="data-input-total">$0.00</span>
                     </div>
                 </div>
-                <button class="data-input-modal-done">Done</button>
+                <button class="data-input-modal-done bill-calculator-modal-done">Done</button>
             </div>
         </div>
     </div>

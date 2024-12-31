@@ -3496,6 +3496,12 @@ font-size:1rem;
     border: 0.0625rem solid #ddd;
     border-radius: 0.25rem;
     font-size: 0.875rem;
+    color: #727272;
+}
+
+.data-input-field input.active,
+.data-input-field select.active{
+    border: 1px solid red;
 }
 
  .data-input-last-date,
@@ -3528,7 +3534,7 @@ width: 1.3rem;
 
 
 
- .data-input-submit {
+body .data-input-submit {
     background:var(--violet-color);
     color: white;
     border: none;
@@ -3544,7 +3550,7 @@ width: 1.3rem;
     
 }
 
- .data-input-submit:hover {
+body  .data-input-submit:hover {
     background: #552288;
 }
 
@@ -3597,7 +3603,7 @@ width: 1.3rem;
 }
 
 .data-input-details-container-inner{
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .data-input-checkbox-group{
@@ -3664,6 +3670,9 @@ width: 1.3rem;
     height: 10rem;
     width: 100%;
 }
+.data-input-text-area.active{
+    border:  1px solid red;
+}
 .data-input-text-area-container{
     margin-top: 1.5rem;
 }
@@ -3700,6 +3709,7 @@ width: 1.3rem;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    pointer-events: none;
 }
 
 .data-input-upload-container-cloud-image img{
@@ -3713,6 +3723,8 @@ width: 1.3rem;
 .data-input-upload-container-cloud-text .highlight{
     color: var(--violet-color);
     position: relative;
+    cursor: pointer;
+    pointer-events:visible;
 }
 
 .data-input-upload-container-cloud-text .highlight::after {
@@ -3963,6 +3975,29 @@ span.total-modal-text {
     padding: 0.625rem;
  height: 10rem;    
 }
+
+.error {
+    border: 1px solid red;
+}
+
+.error-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: .6rem;
+    top: 2.8rem;
+    display: none;
+}
+
+.error-icon.active{
+    display: flex;
+}
+
+.error-icon img{
+    width: 1rem;
+}
+
 
 @media (min-width: 768px) {
     .sitelinks-section {
